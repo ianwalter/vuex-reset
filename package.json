@@ -29,5 +29,13 @@
   },
   "dependencies": {
     "@ianwalter/clone": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianwalter/vuex-reset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ianwalter/vuex-reset/issues"
+  },
+  "homepage": "https://github.com/ianwalter/vuex-reset#readme"
 }
