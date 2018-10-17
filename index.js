@@ -1,7 +1,8 @@
 import clone from '@ianwalter/clone'
+import merge from 'deepmerge'
 
 export default (opts = {}) => {
-  const { ssr, trigger } = Object.assign({}, { trigger: 'reset' }, opts)
+  const { ssr, trigger } = merge({ trigger: 'reset' }, opts)
 
   return store => {
     // Extract the initial state from the store so that it can be used to reset
@@ -13,7 +14,7 @@ export default (opts = {}) => {
     // SSR data and the store can be reset cleanly.
     if (ssr) {
       const currentState = clone(store.state, { objectCreate: false })
-      store.replaceState(Object.assign({}, initialState, ssr, currentState))
+      store.replaceState(merge(currentState, ssr))
     }
 
     store.subscribe((mutation, state) => {
@@ -34,7 +35,7 @@ export default (opts = {}) => {
         if (mut === trigger) {
           // Reset the state for the module containing the mutation.
           const moduleState = { [mod]: initialState[mod] }
-          const newState = Object.assign({}, state, moduleState)
+          const newState = merge(state, moduleState)
           store.replaceState(clone(newState, { objectCreate: false }))
         }
       }

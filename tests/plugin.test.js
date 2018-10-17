@@ -57,9 +57,9 @@ test('plugin resets only module state when module mutation executed', () => {
 
 test('plugin uses ssr state but can reset to initial state', () => {
   const message = 'Yo!'
-  const state = { message: 'Hello!' }
+  const state = { message: 'Hello!', song: 'The Wheel' }
   const store = new Vuex.Store({
-    plugins: [VuexReset({ ssr: { message } })],
+    plugins: [VuexReset({ ssr: { message, song: null } })],
     state: clone(state),
     mutations: {
       reset: () => true
