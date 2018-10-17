@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/vuex-reset",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A Vuex plugin that makes restoring initial state to the store simple",
   "main": "dist/vuex-reset.js",
   "umd:main": "dist/vuex-reset.umd.js",
