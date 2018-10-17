@@ -1,0 +1,26 @@
+{
+  "name": "@ianwalter/vuex-reset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/vuex-reset.js",
+  "umd:main": "dist/vuex-reset.umd.js",
+  "module": "dist/vuex-reset.m.js",
+  "scripts": {
+    "build": "microbundle build index.js --compress false",
+    "watch": "microbundle watch index.js --compress false",
+    "test": "npm run build && jest"
+  },
+  "keywords": [],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
+    "np": "^3.0.4",
+    "vue": "^2.5.17",
+    "vuex": "^3.0.1"
+  },
+  "dependencies": {
+    "@ianwalter/clone": "^1.0.2"
+  }
+}
