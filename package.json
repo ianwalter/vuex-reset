@@ -8,6 +8,7 @@
   "scripts": {
     "build": "microbundle build index.js --compress false",
     "watch": "microbundle watch index.js --compress false",
+    "lint": "eslint --ext js index.js tests",
     "test": "npm run build && jest"
   },
   "keywords": [
@@ -20,15 +21,22 @@
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "ISC",
+  "dependencies": {
+    "@ianwalter/clone": "^1.0.2"
+  },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
     "jest": "^23.6.0",
     "microbundle": "^0.6.0",
     "np": "^3.0.4",
     "vue": "^2.5.17",
     "vuex": "^3.0.1"
-  },
-  "dependencies": {
-    "@ianwalter/clone": "^1.0.2"
   },
   "repository": {
     "type": "git",
@@ -37,5 +45,17 @@
   "bugs": {
     "url": "https://github.com/ianwalter/vuex-reset/issues"
   },
-  "homepage": "https://github.com/ianwalter/vuex-reset#readme"
+  "homepage": "https://github.com/ianwalter/vuex-reset#readme",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "jest/globals": true
+    },
+    "extends": [
+      "standard"
+    ],
+    "plugins": [
+      "jest"
+    ]
+  }
 }
