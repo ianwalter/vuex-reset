@@ -12,9 +12,8 @@ export default (opts = {}) => {
     // after the initialState is set so that initialState isn't polluted with
     // SSR data and the store can be reset cleanly.
     if (ssr) {
-      // console.log({ ...initialState, ...ssr })
-      // store.replaceState({ ...initialState, ...ssr })
-      store.replaceState(Object.assign({}, initialState, ssr))
+      const currentState = clone(store.state, { objectCreate: false })
+      store.replaceState(Object.assign({}, initialState, ssr, currentState))
     }
 
     store.subscribe((mutation, state) => {
