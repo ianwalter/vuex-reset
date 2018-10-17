@@ -19,10 +19,15 @@ export default (opts = {}) => {
 
     store.subscribe((mutation, state) => {
       if (mutation.type === trigger) {
-        // TODO: don't reset route module if set.
+        const newState = clone(initialState)
+
+        // Don't reset route module if set.
+        if (state.route) {
+          newState.route = clone(state.route, { objectCreate: false })
+        }
 
         // Reset the entire store state.
-        store.replaceState(clone(initialState))
+        store.replaceState(newState)
       } else {
         // Extract the name of the module and mutation.
         const [mod, mut] = mutation.type.split('/')

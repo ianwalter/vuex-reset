@@ -69,3 +69,31 @@ test('plugin uses ssr state but can reset to initial state', () => {
   store.commit('reset')
   expect(store.state).toEqual(state)
 })
+
+test('plugin keeps current route state if it exists when reset', () => {
+  const state = { message: 'Hello!' }
+  const route = { path: '/' }
+  const path = '/welcome'
+  const store = new Vuex.Store({
+    plugins: [VuexReset()],
+    state: clone(state),
+    modules: {
+      route: {
+        namespaced: true,
+        state: clone(route),
+        mutations: {
+          path: (state, path) => (state.path = path)
+        }
+      }
+    },
+    mutations: {
+      message: (state, message) => (state.message = message),
+      reset: () => {}
+    }
+  })
+  store.commit('route/path', path)
+  store.commit('message', 'Greetings!')
+  store.commit('reset')
+  expect(store.state.message).toEqual(state.message)
+  expect(store.state.route.path).toEqual(path)
+})

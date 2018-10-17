@@ -1,7 +1,7 @@
 {
   "name": "@ianwalter/vuex-reset",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Vuex plugin that makes restoring initial state to the store simple",
   "main": "dist/vuex-reset.js",
   "umd:main": "dist/vuex-reset.umd.js",
   "module": "dist/vuex-reset.m.js",
@@ -10,7 +10,14 @@
     "watch": "microbundle watch index.js --compress false",
     "test": "npm run build && jest"
   },
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "vuex",
+    "restore",
+    "reset",
+    "initial",
+    "state"
+  ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "ISC",
   "devDependencies": {
