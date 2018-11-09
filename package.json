@@ -20,7 +20,7 @@
     "state"
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
-  "license": "ISC",
+  "license": "Apache 2.0 with Commons Clause",
   "dependencies": {
     "@ianwalter/clone": "^1.0.2",
     "deepmerge": "^2.2.1"

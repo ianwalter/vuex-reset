@@ -55,7 +55,11 @@ const store = new Vuex.Store({
 store.commit('car/reset')
 ```
 
+## License
+
+Apache 2.0 with Commons Clause - See [LICENSE](https://github.com/ianwalter/vuex-reset/blob/master/LICENSE)
+
 &nbsp;
 
-ISC &copy; [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://iankwalter.com)
 
