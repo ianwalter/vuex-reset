@@ -25,4 +25,5 @@ steps:
   - task: Docker@1
     inputs:
       command: 'push'
+      dockerRegistryConnection: 'Docker'
     displayName: 'Push Docker image'
