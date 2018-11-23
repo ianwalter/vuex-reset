@@ -17,6 +17,7 @@ steps:
     displayName: 'Install and Test'
 
   - script: |
+      yarn build:site
       docker build -t ianwalter/$(system.teamProject) .
       docker push ianwalter/$(system.teamProject)
     displayName: 'Build and push Docker image'
