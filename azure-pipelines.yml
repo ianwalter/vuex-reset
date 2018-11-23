@@ -25,5 +25,6 @@ steps:
   - task: Docker@1
     inputs:
       command: 'push'
+      containerregistrytype: 'Container Registry'
       dockerRegistryConnection: 'Docker'
     displayName: 'Push Docker image'
