@@ -15,3 +15,8 @@ steps:
       yarn lint
       yarn test
     displayName: 'Install and Test'
+
+  - script: |
+      docker build -t ianwalter/$(system.teamProject) .
+      docker push ianwalter/$(system.teamProject)
+    displayName: 'Build and push Docker image'
