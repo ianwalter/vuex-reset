@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vuex-reset-service
+  name: vuex-reset
   labels:
     app: vuex-reset
 spec:
