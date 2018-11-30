@@ -28,7 +28,7 @@ test('plugin resets only module state when module mutation executed', () => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
-  const songState = { name: 'Messy Love' }
+  const songState = { name: 'Messy Love', collections: [] }
   const store = new Vuex.Store({
     plugins: [VuexReset()],
     state: clone(state),
@@ -42,6 +42,7 @@ test('plugin resets only module state when module mutation executed', () => {
         state: clone(songState),
         mutations: {
           name: (state, name) => (state.name = name),
+          collection: (state, collection) => state.collections.push(collection),
           reset: () => {}
         }
       }
@@ -50,6 +51,8 @@ test('plugin resets only module state when module mutation executed', () => {
   store.commit('message', rootMessage)
   store.commit('song/name', songName)
   expect(store.state.song.name).toEqual(songName)
+  store.commit('song/collection', 'Summer')
+  expect(store.state.song.collections).toEqual(['Summer'])
   store.commit('song/reset')
   expect(store.state.message).toEqual(rootMessage)
   expect(store.state.song).toEqual(songState)
