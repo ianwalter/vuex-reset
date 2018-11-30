@@ -1,6 +1,8 @@
 import clone from '@ianwalter/clone'
 import merge from 'deepmerge'
 
+const overwrite = (dst, src) => src
+
 export default (opts = {}) => {
   const { ssr, trigger } = merge({ trigger: 'reset' }, opts)
 
@@ -35,7 +37,7 @@ export default (opts = {}) => {
         if (mut === trigger) {
           // Reset the state for the module containing the mutation.
           const moduleState = { [mod]: initialState[mod] }
-          const newState = merge(state, moduleState)
+          const newState = merge(state, moduleState, { arrayMerge: overwrite })
           store.replaceState(clone(newState, { objectCreate: false }))
         }
       }

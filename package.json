@@ -7,9 +7,9 @@
   "module": "dist/vuex-reset.m.js",
   "scripts": {
     "build": "microbundle build index.js --compress false",
+    "build:site": "webpack --env.singleRun",
     "watch": "microbundle watch index.js --compress false",
     "start": "webpack-dev-server",
-    "build:site": "webpack --env.singleRun",
     "lint": "eslint --ext js index.js tests",
     "test": "npm run build && jest"
   },
