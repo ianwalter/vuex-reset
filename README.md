@@ -1,11 +1,11 @@
 # @ianwalter/vuex-reset
-> A [Vuex](https://github.com/vuejs/vuex) plugin that makes restoring initial
-> state to the store simple
+> A [Vuex][vuexUrl] plugin that makes restoring initial state to the store
+> simple
 
 ## Installation
 
 ```
-npm install @ianwalter/vuex-reset --save
+yarn add @ianwalter/vuex-reset
 ```
 
 ## Usage
@@ -63,4 +63,5 @@ Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 Created by [Ian Walter](https://iankwalter.com)
 
+[vuexUrl]: https://github.com/vuejs/vuex
 [licenseUrl]: https://github.com/ianwalter/vuex-reset/blob/master/LICENSE

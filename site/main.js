@@ -1,3 +1,4 @@
+import './main.css'
 import Vue from 'vue'
 
 import store from './store'
