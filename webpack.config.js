@@ -9,7 +9,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const isProduction = process.env.NODE_ENV === 'production'
 const site = join(__dirname, 'site')
 const cssProcessorOptions = { discardComments: { removeAll: true } }
-const cssLoaderOptions = { importLoaders: isProduction ? 2 : 1 }
+const cssLoaderOptions = { importLoaders: isProduction ? 1 : 0 }
 
 module.exports = (env = {}) => ({
   mode: isProduction ? 'production' : 'development',
@@ -44,10 +44,6 @@ module.exports = (env = {}) => ({
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           { loader: 'css-loader', options: cssLoaderOptions },
-          {
-            loader: 'postcss-loader',
-            options: { plugins: [require('autoprefixer')()] }
-          },
           ...(isProduction ? [
             {
               loader: '@fullhuman/purgecss-loader',
