@@ -243,7 +243,7 @@
     "@babel/helper-remap-async-to-generator" "^7.1.0"
     "@babel/plugin-syntax-async-generators" "^7.0.0"
 
-"@babel/plugin-proposal-class-properties@^7.1.0":
+"@babel/plugin-proposal-class-properties@7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.1.0.tgz#9af01856b1241db60ec8838d84691aa0bd1e8df4"
   integrity sha512-/PCJWN+CKt5v1xcGn4vnuu13QDoV+P7NcICP44BoonAJoPSGwVkgrXihFIQGiEjjPlUDBIw1cM7wYFLARS2/hw==
@@ -6057,12 +6057,12 @@ methods@~1.1.2:
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 microbundle@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/microbundle/-/microbundle-0.8.1.tgz#b04a6aacf58d4d5d083ddc875715bfaac4268f1a"
-  integrity sha512-ygl3dwTSMlhSJFf7ie3uRIrFHrDn4BmddPJSM4uZ2zNcNBwYQoo9znPqVirWjBR5VxBNga64lNGjmB10ZHihpA==
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/microbundle/-/microbundle-0.8.3.tgz#9e8b7988ddeb8b0e316709949c77f64789823ec6"
+  integrity sha512-vJHzfwWFG4Q6Oly+gVE4mm/3t+eqtG+VeHaHNo5ev6i00XoMXJJ5RbTg7Rawh4r5ZkltjLEgk4kICk+4WUcj3w==
   dependencies:
     "@babel/core" "^7.1.6"
-    "@babel/plugin-proposal-class-properties" "^7.1.0"
+    "@babel/plugin-proposal-class-properties" "7.1.0"
     "@babel/plugin-syntax-jsx" "^7.0.0"
     "@babel/polyfill" "^7.0.0"
     asyncro "^3.0.0"
@@ -6090,7 +6090,7 @@ microbundle@^0.8.1:
     rollup-plugin-terser "^3.0.0"
     rollup-plugin-typescript2 "^0.18.0"
     sade "^1.4.0"
-    tiny-glob "^0.2.0"
+    tiny-glob "^0.2.6"
     tslib "^1.9.0"
     typescript ">=2.8.3"
 
@@ -9449,10 +9449,10 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
-tiny-glob@^0.2.0:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.2.tgz#a4ddf2c343f85d80b4456f58ebc8b66f7553948a"
-  integrity sha512-o8rak1FRmr55Nd1Bdcfd+yetPGclFCVHXiKmoBHYULc+FQXBbqb9S3zKAWyqk+RdWvutlGUOw0kCHC0JLF/T4Q==
+tiny-glob@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.6.tgz#9e056e169d9788fe8a734dfa1ff02e9b92ed7eda"
+  integrity sha512-A7ewMqPu1B5PWwC3m7KVgAu96Ch5LA0w4SnEN/LbDREj/gAD0nPWboRbn8YoP9ISZXqeNAlMvKSKoEuhcfK3Pw==
   dependencies:
     globalyzer "^0.1.0"
     globrex "^0.1.1"
