@@ -25,7 +25,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "@ianwalter/clone": "^1.0.2",
-    "deepmerge": "^2.2.1"
+    "deepmerge": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
