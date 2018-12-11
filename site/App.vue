@@ -147,7 +147,7 @@
           <h2>Usage</h2>
         </div>
 
-        <pre><!--
+        <pre class="my-3"><!--
        --><code class="language-javascript container d-block py-5"><!--
          -->import VuexReset from '@ianwalter/vuex-reset'
 
@@ -166,6 +166,36 @@
 
 <!--     -->// Reset the store to it's initial state.
 <!--     -->store.commit('reset')<!--
+       --></code><!--
+     --></pre>
+
+        <div class="container py-2 lead">
+          You can also reset a namespaced module to it's initial state, for
+          example:
+        </div>
+
+        <pre class="my-3"><!--
+       --><code class="language-javascript container d-block py-5"><!--
+         -->const store = new Vuex.Store({
+<!--     -->  plugins: [VuexReset()],
+<!--     -->  state: {
+<!--     -->    message: 'Welcome!'
+<!--     -->  },
+<!--     -->  modules: {
+<!--     -->    car: {
+<!--     -->      namespaced: true,
+<!--     -->      state: {
+<!--     -->        brand: 'Honda'
+<!--     -->      },
+<!--     -->      mutations: {
+<!--     -->        reset: () => {}
+<!--     -->      }
+<!--     -->    }
+<!--     -->  }
+<!--     -->})
+
+<!--     -->// Reset the car module to it's initital state.
+<!--     -->store.commit('car/reset')<!--
        --></code><!--
      --></pre>
 
