@@ -37,25 +37,27 @@ module.exports = (env = {}) => ({
   ],
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.vue$/, exclude: /node_modules/, loader: 'vue-loader' },
+      { test: /\.js$/, include: site, loader: 'babel-loader' },
+      { test: /\.vue$/, include: site, loader: 'vue-loader' },
       {
         test: /\.css$/,
+        include: site,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           { loader: 'css-loader', options: cssLoaderOptions },
           ...(isProduction ? [
             {
               loader: '@fullhuman/purgecss-loader',
-              options: {
-                content: [join(site, 'index.html')],
-                whitelistPatterns: [
-                  /hljs/
-                ]
-              }
+              options: { content: [join(site, 'App.vue')] }
             }
           ] : [])
         ]
+      },
+      {
+        test: /\.html$/,
+        resourceQuery: /^\?vue/,
+        include: site,
+        loader: '@ianwalter/prism-loader'
       }
     ]
   }

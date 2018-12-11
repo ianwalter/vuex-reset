@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div>
 
     <header>
@@ -15,7 +15,7 @@
           class="mr-2"
           href="https://github.com/ianwalter/vuex-reset">
           <img
-            src="https://img.shields.io/github/stars/ianwalter/vuex-reset.svg?style=plastic&label=GitHub"
+            src="https://img.shields.io/github/stars/ianwalter/vuex-reset.svg?style=plastic&amp;label=GitHub"
             alt="github">
         </a>
 
@@ -133,11 +133,41 @@
           <h2>Installation</h2>
         </div>
 
-        <pre>
-          <code class="console container">
-yarn add @ianwalter/vuex-reset
-          </code>
-        </pre>
+        <pre><!--
+       --><code class="container d-block py-4"><!--
+            -->yarn add @ianwalter/vuex-reset<!--
+       --></code><!--
+     --></pre>
+
+      </section>
+
+      <section class="pt-3 pb-2">
+
+        <div class="container pb-3">
+          <h2>Usage</h2>
+        </div>
+
+        <pre><!--
+       --><code class="language-javascript container d-block py-4"><!--
+         -->import VuexReset from '@ianwalter/vuex-reset'
+
+<!--     -->const store = new Vuex.Store({
+<!--     -->  plugins: [VuexReset()],
+<!--     -->  state: {
+<!--     -->    message: 'Welcome!',
+<!--     -->    mutations: {
+<!--     -->      // A no-op mutation must be added to serve as a trigger for a reset. The
+<!--     -->      // name of the trigger mutation defaults to 'reset' but can be specified
+<!--     -->      // in options, e.g. VuexReset({ trigger: 'data' }).
+<!--     -->      reset: () => {}
+<!--     -->    }
+<!--     -->  }
+<!--     -->})
+
+<!--     -->// Reset the store to it's initial state.
+<!--     -->store.commit('reset')<!--
+       --></code><!--
+     --></pre>
 
       </section>
 
@@ -166,23 +196,14 @@ yarn add @ianwalter/vuex-reset
 </template>
 
 <script>
+import { stripIndent } from 'common-tags'
 import { mapState } from 'vuex'
-import hljs from 'highlight.js/lib/highlight'
-import javascript from 'highlight.js/lib/languages/javascript'
-
-hljs.registerLanguage('javascript', javascript)
 
 export default {
   data: () => ({ message: null }),
   computed: {
     ...mapState(['count']),
     ...mapState('messages', ['messages'])
-  },
-  mounted () {
-    document.querySelectorAll('code').forEach(el => {
-      el.innerHTML = el.innerHTML.trimRight()
-      hljs.highlightBlock(el)
-    })
   },
   methods: {
     increment () {
