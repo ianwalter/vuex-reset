@@ -134,7 +134,7 @@
         </div>
 
         <pre><!--
-       --><code class="container d-block py-4"><!--
+       --><code class="container d-block py-5"><!--
             -->yarn add @ianwalter/vuex-reset<!--
        --></code><!--
      --></pre>
@@ -148,7 +148,7 @@
         </div>
 
         <pre><!--
-       --><code class="language-javascript container d-block py-4"><!--
+       --><code class="language-javascript container d-block py-5"><!--
          -->import VuexReset from '@ianwalter/vuex-reset'
 
 <!--     -->const store = new Vuex.Store({
@@ -196,7 +196,6 @@
 </template>
 
 <script>
-import { stripIndent } from 'common-tags'
 import { mapState } from 'vuex'
 
 export default {
