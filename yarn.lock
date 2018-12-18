@@ -1386,10 +1386,10 @@ babel-plugin-syntax-object-rest-spread@^6.13.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
   integrity sha1-/WU28rzhODb/o6VFjEkDpZe7O/U=
 
-babel-plugin-transform-async-to-promises@^0.8.1:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-to-promises/-/babel-plugin-transform-async-to-promises-0.8.2.tgz#d56d88b4aff6e42b66112a47f37ebb2edb22ca62"
-  integrity sha512-DDvIFpWWJ9+r55PzeCdfQ5Uf6kuPsneeP6AQf2f6thMRH6ekgzRCYdfO7z/JyDYh1I6Cpr/l4B0XFW9DEMbpVA==
+babel-plugin-transform-async-to-promises@^0.8.3:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-to-promises/-/babel-plugin-transform-async-to-promises-0.8.4.tgz#f0ffd0db2b1fa1bee1b723fe651dc412d75aabb7"
+  integrity sha512-2lS63lG9z0pMpnd6D+dOctOgZ0QQlYZrPSMzx9IeJpSZo3MuFD09LfG12PRSIkJr7v2UkcnYKfBJRx39X4Di4w==
 
 babel-preset-jest@^23.2.0:
   version "23.2.0"
@@ -6246,9 +6246,9 @@ methods@~1.1.2:
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 microbundle@^0.8.1:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/microbundle/-/microbundle-0.8.3.tgz#9e8b7988ddeb8b0e316709949c77f64789823ec6"
-  integrity sha512-vJHzfwWFG4Q6Oly+gVE4mm/3t+eqtG+VeHaHNo5ev6i00XoMXJJ5RbTg7Rawh4r5ZkltjLEgk4kICk+4WUcj3w==
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/microbundle/-/microbundle-0.8.4.tgz#72f08b6fac0f166e07ab6b9f77d43c0e84d54510"
+  integrity sha512-5mBtwzCQPVlPUDDDG26NYyVado9SFcOirmOSVG96zObsKaaqmvaNSSfzFa/+5sb6Gc1T3Ty0o+0RDM/KYnD+9g==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "7.1.0"
@@ -6256,7 +6256,7 @@ microbundle@^0.8.1:
     "@babel/polyfill" "^7.0.0"
     asyncro "^3.0.0"
     autoprefixer "^9.0.0"
-    babel-plugin-transform-async-to-promises "^0.8.1"
+    babel-plugin-transform-async-to-promises "^0.8.3"
     brotli-size "^0.0.3"
     camelcase "^5.0.0"
     chalk "^2.4.0"
@@ -6271,6 +6271,7 @@ microbundle@^0.8.1:
     rollup-plugin-commonjs "^9.0.0"
     rollup-plugin-es3 "^1.1.0"
     rollup-plugin-flow "^1.1.1"
+    rollup-plugin-json "^3.1.0"
     rollup-plugin-node-resolve "^3.3.0"
     rollup-plugin-postcss "^1.6.1"
     rollup-plugin-preserve-shebang "^0.1.6"
@@ -8727,6 +8728,13 @@ rollup-plugin-flow@^1.1.1:
     flow-remove-types "^1.1.0"
     rollup-pluginutils "^1.5.1"
 
+rollup-plugin-json@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-3.1.0.tgz#7c1daf60c46bc21021ea016bd00863561a03321b"
+  integrity sha512-BlYk5VspvGpjz7lAwArVzBXR60JK+4EKtPkCHouAWg39obk9S61hZYJDBfMK+oitPdoe11i69TlxKlMQNFC/Uw==
+  dependencies:
+    rollup-pluginutils "^2.3.1"
+
 rollup-plugin-node-resolve@^3.3.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-3.4.0.tgz#908585eda12e393caac7498715a01e08606abc89"
@@ -8800,7 +8808,7 @@ rollup-plugin-typescript2@^0.18.0:
     rollup-pluginutils "2.3.3"
     tslib "1.9.3"
 
-rollup-pluginutils@2.3.3, rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.3:
+rollup-pluginutils@2.3.3, rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.1, rollup-pluginutils@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.3.tgz#3aad9b1eb3e7fe8262820818840bf091e5ae6794"
   integrity sha512-2XZwja7b6P5q4RZ5FhyX1+f46xi1Z3qBKigLRZ6VTZjwbN0K1IFGMlwm06Uu0Emcre2Z63l77nq/pzn+KxIEoA==
