@@ -10,7 +10,7 @@
     "build:site": "webpack --env.singleRun",
     "start": "webpack-dev-server",
     "lint": "eslint --ext js index.js tests",
-    "pretest": "npm run build && ls -al",
+    "pretest": "npm run build && echo hello > test-write && ls -al",
     "test": "jest"
   },
   "keywords": [
