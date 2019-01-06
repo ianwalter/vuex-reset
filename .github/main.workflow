@@ -4,19 +4,19 @@ workflow "CI" {
 }
 
 action "Install" {
-  uses = "docker://node:11"
+  uses = "ianwalter/docker-node"
   runs = "yarn"
 }
 
 action "Lint" {
-  uses = "docker://node:11"
+  uses = "ianwalter/docker-node"
   needs = ["Install"]
   runs = "yarn"
   args = "lint"
 }
 
 action "Test" {
-  uses = "docker://node:11"
+  uses = "ianwalter/docker-node"
   needs = ["Install"]
   runs = "yarn"
   args = "test"
