@@ -2,7 +2,7 @@ const Vue = require('vue')
 const Vuex = require('vuex')
 const clone = require('@ianwalter/clone')
 
-const VuexReset = require('../dist/vuex-reset')
+const VuexReset = require('..')
 
 Vue.use(Vuex)
 

@@ -10,7 +10,8 @@
     "build:site": "webpack --env.singleRun",
     "start": "webpack-dev-server",
     "lint": "eslint --ext js index.js tests",
-    "test": "npm run build && jest"
+    "pretest": "npm run build",
+    "test": "jest"
   },
   "keywords": [
     "vue",
