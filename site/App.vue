@@ -4,7 +4,9 @@
     <header>
       <div class="container py-4">
 
-        <h1 class="mb-3">@ianwalter/vuex-reset</h1>
+        <h1 class="mb-3">
+          @ianwalter/vuex-reset
+        </h1>
 
         <blockquote class="description p-3">
           A <a href="https://vuex.vuejs.org/">Vuex</a> plugin that makes
@@ -13,24 +15,29 @@
 
         <a
           class="mr-2"
-          href="https://github.com/ianwalter/vuex-reset">
+          href="https://github.com/ianwalter/vuex-reset"
+        >
           <img
             src="https://img.shields.io/github/stars/ianwalter/vuex-reset.svg?style=plastic&amp;label=GitHub"
-            alt="github">
+            alt="github"
+          >
         </a>
 
         <a
           class="mr-2"
-          href="https://www.npmjs.com/package/@ianwalter/vuex-reset">
+          href="https://www.npmjs.com/package/@ianwalter/vuex-reset"
+        >
           <img
             src="https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg"
-            alt="npm">
+            alt="npm"
+          >
         </a>
 
         <a href="https://dev.azure.com/ianwalter/vuex-reset/_build">
           <img
             src="https://dev.azure.com/ianwalter/vuex-reset/_apis/build/status/ianwalter.vuex-reset"
-            alt="build status">
+            alt="build status"
+          >
         </a>
 
       </div>
@@ -50,13 +57,15 @@
 
             <button
               class="btn btn-sm btn-danger"
-              @click="resetAll">
+              @click="resetAll"
+            >
               Reset All State
             </button>
 
             <button
               class="btn btn-sm btn-danger"
-              @click="resetMessages">
+              @click="resetMessages"
+            >
               Reset Messages Module
             </button>
 
@@ -72,7 +81,8 @@
                 <div class="col-6 text-right">
                   <button
                     class="btn btn-sm btn-primary"
-                    @click="increment">
+                    @click="increment"
+                  >
                     Increment Count
                   </button>
                 </div>
@@ -83,24 +93,28 @@
 
                   <div
                     :class="{ 'mb-3': messages.length }"
-                    class="row align-items-center">
+                    class="row align-items-center"
+                  >
                     <div class="col-6">
                       <strong>messages/messages:</strong>
                     </div>
 
                     <form
                       class="col-6 form-inline"
-                      @submit.prevent="addMessage">
+                      @submit.prevent="addMessage"
+                    >
 
                       <input
+                        v-model="message"
                         type="text"
                         placeholder="Enter a message..."
                         class="form-control form-control-sm ml-auto mr-3"
-                        v-model="message" />
+                      >
 
                       <button
                         type="submit"
-                        class="btn btn-sm btn-primary">
+                        class="btn btn-sm btn-primary"
+                      >
                         Add Message
                       </button>
 
@@ -109,11 +123,13 @@
 
                   <table
                     v-show="messages.length"
-                    class="table table-bordered table-striped mb-0">
+                    class="table table-bordered table-striped mb-0"
+                  >
                     <tbody>
                       <tr
                         v-for="(message, index) of messages"
-                        :key="index">
+                        :key="index"
+                      >
                         <td>{{ message }}</td>
                       </tr>
                     </tbody>
