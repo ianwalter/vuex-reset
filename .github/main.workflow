@@ -4,19 +4,19 @@ workflow "CI" {
 }
 
 action "Install" {
-  uses = "ianwalter/docker-node@master"
+  uses = "docker://node:11-alpine"
   runs = "yarn"
 }
 
 action "Lint" {
-  uses = "ianwalter/docker-node@master"
+  uses = "docker://node:11-alpine"
   needs = ["Install"]
   runs = "yarn"
   args = "lint"
 }
 
 action "Test" {
-  uses = "ianwalter/docker-node@master"
+  uses = "docker://node:11-alpine"
   needs = ["Install"]
   runs = "yarn"
   args = "test"

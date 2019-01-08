@@ -1,9 +1,9 @@
-import clone from '@ianwalter/clone'
-import merge from 'deepmerge'
+const clone = require("@ianwalter/clone");
+const merge = require("deepmerge");
 
 const overwrite = (dst, src) => src
 
-export default function VuexReset (opts = {}) {
+module.exports = function VuexReset(opts = {}) {
   const { ssr, trigger } = merge({ trigger: 'reset' }, opts)
 
   return store => {
@@ -43,4 +43,4 @@ export default function VuexReset (opts = {}) {
       }
     })
   }
-}
+};
