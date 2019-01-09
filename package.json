@@ -52,7 +52,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "style-loader": "^0.23.1",
     "vue": "^2.5.17",
-    "vue-loader": "^15.5.0",
+    "vue-loader": "^15.5.1",
     "vue-template-compiler": "^2.5.17",
     "vuex": "^3.0.1",
     "webpack": "^4.28.3",
