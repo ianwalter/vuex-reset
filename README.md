@@ -65,7 +65,7 @@ Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 Created by [Ian Walter](https://iankwalter.com)
 
-[npmImage]: https://img.shields.io/npm/v/@ianwalter/dist.svg
-[npmUrl]: https://www.npmjs.com/package/@ianwalter/dist
+[npmImage]: https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg
+[npmUrl]: https://www.npmjs.com/package/@ianwalter/vuex-reset
 [vuexUrl]: https://github.com/vuejs/vuex
 [licenseUrl]: https://github.com/ianwalter/vuex-reset/blob/master/LICENSE
