@@ -57,6 +57,11 @@ const store = new Vuex.Store({
 store.commit('car/reset')
 ```
 
+## See Also
+
+* [`vue-component-reset`][vueComponentResetUrl]: A Vue.js component mixin that
+  makes restoring initial state to the component simple
+
 ## License
 
 Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
@@ -68,4 +73,5 @@ Created by [Ian Walter](https://iankwalter.com)
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/vuex-reset
 [vuexUrl]: https://github.com/vuejs/vuex
+[vueComponentResetUrl]: https://github.com/ianwalter/vue-component-reset
 [licenseUrl]: https://github.com/ianwalter/vuex-reset/blob/master/LICENSE
