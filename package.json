@@ -36,7 +36,7 @@
     "@ianwalter/dist": "^1.3.1",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/prism-loader": "^1.2.0",
-    "ava": "^1.0.1",
+    "ava": "^1.1.0",
     "babel-loader": "^8.0.5",
     "bootstrap": "^4.2.1",
     "clean-webpack-plugin": "^1.0.0",
