@@ -713,29 +713,25 @@
     loader-utils "^1.1.0"
     purgecss "^1.1.0"
 
-"@ianwalter/clone@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-1.0.2.tgz#ed72ae0db824b7fd45c6eae8ce0288f94edc97a9"
-  integrity sha512-pqYkbPcI+VEgpcyhGCbeGeq3rCZLpj+Mk7yuYasMPttkfkGS+a4kI9VUNa5JY4WfYMcUIIq7GgBxgnyejHb6fg==
-
 "@ianwalter/clone@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-1.0.3.tgz#7f800e17149b0099e08ca669185c2da976b74289"
   integrity sha512-nX1TtKPfOhXQBNr3FwDVjqSPFNZS10S2tuJKuH4Q4/WqWAzkdTHSVdNE4myVTHQStLEsuklJY91eE6VTBeRnDw==
 
-"@ianwalter/dist@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.3.1.tgz#efdb0bbaf8786d37b842d07de780ecf490202f05"
-  integrity sha512-nyVzvPDjaiqw+v0A19sNduzVO81Psf16YgohMTSU8MjJ2lCB40+NL910ps+HOK6+rNKguc7R+an7Hot3YzuAwA==
+"@ianwalter/dist@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.4.0.tgz#fc99fcee6fd6e42b83a6ea2cc6bb4a6e0e6b40e9"
+  integrity sha512-iMWEW8aRcaTAZlR78wpCAVJxC2XNoZEqPuvhrwOvEAhdSIhRpEfmUJcV43r+glQ+7ViGcnQR0TEVzcHjEhO9uQ==
   dependencies:
     "@babel/core" "^7.2.2"
-    "@ianwalter/clone" "^1.0.2"
+    "@ianwalter/clone" "^1.0.3"
     "@ianwalter/npm-short-name" "^1.0.0"
     "@ianwalter/promise-complete" "^2.0.0"
     chalk "^2.4.2"
     meow "^5.0.0"
     pify "^4.0.1"
     read-pkg-up "^4.0.0"
+    require-from-string "^2.0.2"
     rollup "^1.0.2"
     rollup-plugin-commonjs "^9.2.0"
     rollup-plugin-json "^3.1.0"
@@ -7189,6 +7185,11 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
+require-from-string@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
+  integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
 require-main-filename@^1.0.1:
   version "1.0.1"
