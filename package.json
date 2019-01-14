@@ -24,16 +24,14 @@
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "@ianwalter/clone": "^1.0.3",
-    "deepmerge": "^2.2.1"
+    "@ianwalter/clone": "^2.0.0",
+    "@ianwalter/merge": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.5",
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.1.6",
     "@fullhuman/purgecss-loader": "^1.0.0",
-    "@ianwalter/dist": "^1.3.1",
+    "@ianwalter/dist": "^1.4.0",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/prism-loader": "^1.2.0",
     "ava": "^1.0.1",
@@ -70,6 +68,19 @@
     "url": "https://github.com/ianwalter/vuex-reset/issues"
   },
   "homepage": "https://github.com/ianwalter/vuex-reset#readme",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "> 0.25%"
+  ],
   "eslintConfig": {
     "root": true,
     "extends": [

@@ -57,9 +57,9 @@ const store = new Vuex.Store({
 store.commit('car/reset')
 ```
 
-## See Also
+## Related
 
-* [`vue-component-reset`][vueComponentResetUrl]: A Vue.js component mixin that
+* [`vue-component-reset`][vueComponentResetUrl] - A Vue.js component mixin that
   makes restoring initial state to the component simple
 
 ## License
