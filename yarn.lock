@@ -44,7 +44,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.1.5", "@babel/core@^7.2.2":
+"@babel/core@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.2.2.tgz#07adba6dde27bb5ad8d8672f15fde3e08184a687"
   integrity sha512-59vB0RWt09cAct5EIe58+NzGP4TFSD3Bz//2/ELy3ZeTeKF6VTD1AXlH8BGGbCX0PuobZBsIzO7IAI9PH67eKw==
@@ -713,29 +713,30 @@
     loader-utils "^1.1.0"
     purgecss "^1.1.0"
 
-"@ianwalter/clone@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-1.0.2.tgz#ed72ae0db824b7fd45c6eae8ce0288f94edc97a9"
-  integrity sha512-pqYkbPcI+VEgpcyhGCbeGeq3rCZLpj+Mk7yuYasMPttkfkGS+a4kI9VUNa5JY4WfYMcUIIq7GgBxgnyejHb6fg==
-
 "@ianwalter/clone@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-1.0.3.tgz#7f800e17149b0099e08ca669185c2da976b74289"
   integrity sha512-nX1TtKPfOhXQBNr3FwDVjqSPFNZS10S2tuJKuH4Q4/WqWAzkdTHSVdNE4myVTHQStLEsuklJY91eE6VTBeRnDw==
 
-"@ianwalter/dist@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.3.1.tgz#efdb0bbaf8786d37b842d07de780ecf490202f05"
-  integrity sha512-nyVzvPDjaiqw+v0A19sNduzVO81Psf16YgohMTSU8MjJ2lCB40+NL910ps+HOK6+rNKguc7R+an7Hot3YzuAwA==
+"@ianwalter/clone@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
+  integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
+
+"@ianwalter/dist@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.4.0.tgz#fc99fcee6fd6e42b83a6ea2cc6bb4a6e0e6b40e9"
+  integrity sha512-iMWEW8aRcaTAZlR78wpCAVJxC2XNoZEqPuvhrwOvEAhdSIhRpEfmUJcV43r+glQ+7ViGcnQR0TEVzcHjEhO9uQ==
   dependencies:
     "@babel/core" "^7.2.2"
-    "@ianwalter/clone" "^1.0.2"
+    "@ianwalter/clone" "^1.0.3"
     "@ianwalter/npm-short-name" "^1.0.0"
     "@ianwalter/promise-complete" "^2.0.0"
     chalk "^2.4.2"
     meow "^5.0.0"
     pify "^4.0.1"
     read-pkg-up "^4.0.0"
+    require-from-string "^2.0.2"
     rollup "^1.0.2"
     rollup-plugin-commonjs "^9.2.0"
     rollup-plugin-json "^3.1.0"
@@ -745,6 +746,11 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/dracula/-/dracula-2.0.0.tgz#55ffc6cbc228696b992853d0b7c2d60c2e531671"
   integrity sha512-iT2RvdsAU1elxzXZH2barcpc1tpEUfCYCmKUsc+2cfB37lugc0MHTqhlLngazwicYC4p4RyKYazzuRDSnLVhXw==
+
+"@ianwalter/merge@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-1.0.0.tgz#6fba29076fa1d98de8fa04aa46f04f5c1414240f"
+  integrity sha512-wABvaT8ap9EjYsoTH/RbSY2m8YHthBbj/AoABTw9jLYiw50IPE+92z9X0hSeG8WW6DW01yQjhlH87uQnaFFglA==
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
@@ -2638,11 +2644,6 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
-
-deepmerge@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
-  integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
 
 default-gateway@^2.6.0:
   version "2.7.2"
@@ -7189,6 +7190,11 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
+require-from-string@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
+  integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
 require-main-filename@^1.0.1:
   version "1.0.1"
