@@ -13,8 +13,7 @@ export default function VuexReset (opts = {}) {
     // after the initialState is set so that initialState isn't polluted with
     // SSR data and the store can be reset cleanly.
     if (ssr) {
-      const currentState = clone(store.state)
-      store.replaceState(merge(currentState, ssr))
+      store.replaceState(clone(merge('merge', store.state, ssr)))
     }
 
     store.subscribe((mutation, state) => {
@@ -35,7 +34,7 @@ export default function VuexReset (opts = {}) {
         if (mut === trigger) {
           // Reset the state for the module containing the mutation.
           const moduleState = { [mod]: initialState[mod] }
-          store.replaceState(merge(clone(state), moduleState))
+          store.replaceState(clone(merge('replace', state, moduleState)))
         }
       }
     })

@@ -8,7 +8,7 @@
   "scripts": {
     "site": "webpack --env.singleRun",
     "start": "webpack-dev-server",
-    "lint": "eslint index.js tests site --ext js,vue",
+    "lint": "eslint index.js test.js site --ext js,vue",
     "iife": "dist -i dist/vuex-reset.m.js --inline --no-cjs --no-esm",
     "pretest": "dist --babel --no-iife && npm run iife",
     "test": "ava"
@@ -23,11 +23,25 @@
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianwalter/vuex-reset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ianwalter/vuex-reset/issues"
+  },
+  "homepage": "https://github.com/ianwalter/vuex-reset#readme",
+  "browserslist": [
+    "> 0.5%"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.2.0",
     "@ianwalter/clone": "^2.0.0",
-    "@ianwalter/merge": "^1.0.0"
+    "@ianwalter/merge": "^1.0.1"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.1.6",
@@ -61,17 +75,6 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.10"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ianwalter/vuex-reset.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ianwalter/vuex-reset/issues"
-  },
-  "homepage": "https://github.com/ianwalter/vuex-reset#readme",
-  "browserslist": [
-    "> 0.5%"
-  ],
   "eslintConfig": {
     "root": true,
     "extends": [
