@@ -2,7 +2,7 @@ import test from 'ava'
 import Vue from 'vue'
 import Vuex from 'vuex'
 import clone from '@ianwalter/clone'
-import VuexReset from '..'
+import VuexReset from '.'
 
 Vue.use(Vuex)
 

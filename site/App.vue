@@ -9,7 +9,10 @@
         </h1>
 
         <blockquote class="description p-3">
-          A <a href="https://vuex.vuejs.org/">Vuex</a> plugin that makes
+          A
+          <a href="https://vuex.vuejs.org/">
+            Vuex
+          </a> plugin that makes
           restoring initial state to the store simple
         </blockquote>
 
@@ -234,7 +237,10 @@
 
     <footer class="container py-5">
       <strong class="text-secondary">
-        Created by <a href="https://iankwalter.com">Ian Walter</a>
+        Created by
+        <a href="https://iankwalter.com">
+          Ian Walter
+        </a>
       </strong>
     </footer>
 
