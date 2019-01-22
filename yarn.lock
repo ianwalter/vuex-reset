@@ -747,10 +747,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/dracula/-/dracula-2.0.0.tgz#55ffc6cbc228696b992853d0b7c2d60c2e531671"
   integrity sha512-iT2RvdsAU1elxzXZH2barcpc1tpEUfCYCmKUsc+2cfB37lugc0MHTqhlLngazwicYC4p4RyKYazzuRDSnLVhXw==
 
-"@ianwalter/merge@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-1.0.2.tgz#ed936752e7e03910a008ab9cf167e3310f6e1f50"
-  integrity sha512-Rc9aTcCVga6nqCIKuEpA097tpldUvBFaKzk0RSOBjKocyygP77e+uTO8o8byAWBRi2YtywvzAvtKjFR0JmXICA==
+"@ianwalter/merge@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.0.tgz#72b6f70cd73a6f18f42e5f60abaf835d7f127df1"
+  integrity sha512-/3ohEt2heX1y08baOv+1FUTYZRyTvl9XphTMA7F7Fx7jZCj01daKf1HId0g+6yZaJgpih3JnKZrakejL33i9TQ==
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
