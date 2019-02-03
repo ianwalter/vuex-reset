@@ -644,7 +644,7 @@
     js-levenshtein "^1.1.3"
     semver "^5.3.0"
 
-"@babel/runtime@^7.3.1":
+"@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
   integrity sha512-7jGW8ppV0ant637pIqAcFfQDDH1orEPGJb8aXfUozuCU3QqX7rX4DA8iwrbPrR1hcH0FTTHz47yQnk+bl5xHQA==
@@ -750,31 +750,25 @@
     loader-utils "^1.1.0"
     purgecss "^1.1.0"
 
-"@ianwalter/clone@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-1.0.3.tgz#7f800e17149b0099e08ca669185c2da976b74289"
-  integrity sha512-nX1TtKPfOhXQBNr3FwDVjqSPFNZS10S2tuJKuH4Q4/WqWAzkdTHSVdNE4myVTHQStLEsuklJY91eE6VTBeRnDw==
-
 "@ianwalter/clone@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
   integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
 
-"@ianwalter/dist@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.4.0.tgz#fc99fcee6fd6e42b83a6ea2cc6bb4a6e0e6b40e9"
-  integrity sha512-iMWEW8aRcaTAZlR78wpCAVJxC2XNoZEqPuvhrwOvEAhdSIhRpEfmUJcV43r+glQ+7ViGcnQR0TEVzcHjEhO9uQ==
+"@ianwalter/dist@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.5.1.tgz#be3d40a1c307bd86c61f945b62010b47a89b3900"
+  integrity sha512-YE5L1GvGWa+DwvfUzLjz8J1zlgv3zHAyaBsp4IDu15EhgKg1zXA751qAbTD56ASZGQzVRhN+K2cXL+JTUSATGw==
   dependencies:
-    "@babel/core" "^7.2.2"
-    "@ianwalter/clone" "^1.0.3"
     "@ianwalter/npm-short-name" "^1.0.0"
-    "@ianwalter/promise-complete" "^2.0.0"
+    "@ianwalter/promise-complete" "^3.0.1"
     chalk "^2.4.2"
     meow "^5.0.0"
     pify "^4.0.1"
     read-pkg-up "^4.0.0"
     require-from-string "^2.0.2"
-    rollup "^1.0.2"
+    rollup "^1.1.2"
+    rollup-plugin-babel "^4.3.2"
     rollup-plugin-commonjs "^9.2.0"
     rollup-plugin-json "^3.1.0"
     rollup-plugin-node-resolve "^4.0.0"
@@ -807,10 +801,12 @@
     rehype-prism "^0.0.2"
     unified "^7.0.2"
 
-"@ianwalter/promise-complete@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/promise-complete/-/promise-complete-2.0.0.tgz#c52446d48aa5b5bc572fee4a4d1ffffd300752f2"
-  integrity sha512-jwyGQoqX4rFwAv048v0TSBB4IrH7TBldOAXEQkcbd9ODk3iWkT8wnh/HZT26t7+CNW3joCwi+D0OmJTrAmTykA==
+"@ianwalter/promise-complete@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/promise-complete/-/promise-complete-3.0.1.tgz#2d091107caca4736223b5b39968efea5f215691b"
+  integrity sha512-zWviJp82MB0spJ7FUrpzcIkvZnz/izhayBLsHv/0sFYsHvI92X7r2y9/zBhkKgG3WDzPE5+qJ86zXgRGc5tDzQ==
+  dependencies:
+    "@babel/runtime" "^7.2.0"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -7383,6 +7379,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rollup-plugin-babel@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-4.3.2.tgz#8c0e1bd7aa9826e90769cf76895007098ffd1413"
+  integrity sha512-KfnizE258L/4enADKX61ozfwGHoqYauvoofghFJBhFnpH9Sb9dNPpWg8QHOaAfVASUYV8w0mCx430i9z0LJoJg==
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    rollup-pluginutils "^2.3.0"
+
 rollup-plugin-commonjs@^9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.2.0.tgz#4604e25069e0c78a09e08faa95dc32dec27f7c89"
@@ -7409,7 +7413,7 @@ rollup-plugin-node-resolve@^4.0.0:
     is-module "^1.0.0"
     resolve "^1.8.1"
 
-rollup-pluginutils@^2.3.1, rollup-pluginutils@^2.3.3:
+rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.1, rollup-pluginutils@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.3.tgz#3aad9b1eb3e7fe8262820818840bf091e5ae6794"
   integrity sha512-2XZwja7b6P5q4RZ5FhyX1+f46xi1Z3qBKigLRZ6VTZjwbN0K1IFGMlwm06Uu0Emcre2Z63l77nq/pzn+KxIEoA==
@@ -7417,10 +7421,10 @@ rollup-pluginutils@^2.3.1, rollup-pluginutils@^2.3.3:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.1.0.tgz#461a7534b55be48aa4a6e6810a1543a5769e75d1"
-  integrity sha512-NK03gkkOz0CchHBMGomcNqa6U3jLNzHuWK9SI0+1FV475JA6cQxVtjlDcQoKKDNIQ3IwYumIlgoKYDEWUyFBwQ==
+rollup@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.1.2.tgz#8d094b85683b810d0c05a16bd7618cf70d48eba7"
+  integrity sha512-OkdMxqMl8pWoQc5D8y1cIinYQPPLV8ZkfLgCzL6SytXeNA2P7UHynEQXI9tYxuAjAMsSyvRaWnyJDLHMxq0XAg==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"

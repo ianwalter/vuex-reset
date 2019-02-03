@@ -46,7 +46,7 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@fullhuman/purgecss-loader": "^1.0.0",
-    "@ianwalter/dist": "^1.4.0",
+    "@ianwalter/dist": "^1.5.1",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/prism-loader": "^1.2.0",
     "ava": "^1.2.0",
