@@ -750,7 +750,15 @@
     loader-utils "^1.1.0"
     purgecss "^1.1.0"
 
-"@ianwalter/clone@^2.0.0":
+"@ianwalter/babel-preset-lib@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@ianwalter/babel-preset-lib/-/babel-preset-lib-1.0.3.tgz#5faf0452541d5798bf8081394a55f63d8d9df2a5"
+  integrity sha512-5WOCkJO4eXfwJkIu7yMOnGfCzWAOqhjwSjHBvBlJ45e06fmcNfrG1GZOyWH84EMJJfw7w3Kpo2ZtSCeEjG8omw==
+  dependencies:
+    "@babel/plugin-transform-runtime" "^7.2.0"
+    "@babel/preset-env" "^7.3.1"
+
+"@ianwalter/clone@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
   integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==

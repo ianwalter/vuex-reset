@@ -6,12 +6,13 @@
   "module": "dist/vuex-reset.m.js",
   "iife": "dist/vuex-reset.iife.js",
   "scripts": {
-    "site": "webpack --env.singleRun",
     "start": "webpack-dev-server",
     "lint": "eslint index.js test.js site --ext js,vue",
-    "iife": "dist -i dist/vuex-reset.m.js --inline --no-cjs --no-esm",
-    "pretest": "dist --babel --no-iife && npm run iife",
-    "test": "ava"
+    "dist": "dist --babel --no-iife",
+    "iife": "dist --name VuexReset --babel --inline --no-cjs --no-esm",
+    "pretest": "npm run dist && npm run iife",
+    "test": "ava",
+    "build:site": "webpack --env.singleRun"
   },
   "keywords": [
     "vue",
@@ -31,21 +32,17 @@
     "url": "https://github.com/ianwalter/vuex-reset/issues"
   },
   "homepage": "https://github.com/ianwalter/vuex-reset#readme",
-  "browserslist": [
-    "> 0.5%"
-  ],
-  "dependencies": {
-    "@babel/runtime": "^7.3.1",
-    "@ianwalter/clone": "^2.0.0",
-    "@ianwalter/merge": "^2.0.0"
-  },
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@babel/runtime": "^7.3.1",
+    "@ianwalter/clone": "^2.0.1",
+    "@ianwalter/merge": "^2.0.0"
+  },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
     "@fullhuman/purgecss-loader": "^1.0.0",
+    "@ianwalter/babel-preset-lib": "^1.0.3",
     "@ianwalter/dist": "^1.5.1",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/prism-loader": "^1.2.0",
@@ -73,6 +70,14 @@
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.10"
+  },
+  "browserslist": [
+    "> 0.5%"
+  ],
+  "babel": {
+    "presets": [
+      "@ianwalter/lib"
+    ]
   },
   "eslintConfig": {
     "root": true,
