@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/runtime": "^7.3.1",
     "@ianwalter/clone": "^2.0.1",
-    "@ianwalter/merge": "^2.0.0"
+    "@ianwalter/merge": "^2.0.1"
   },
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
