@@ -786,10 +786,12 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/dracula/-/dracula-2.0.0.tgz#55ffc6cbc228696b992853d0b7c2d60c2e531671"
   integrity sha512-iT2RvdsAU1elxzXZH2barcpc1tpEUfCYCmKUsc+2cfB37lugc0MHTqhlLngazwicYC4p4RyKYazzuRDSnLVhXw==
 
-"@ianwalter/merge@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.0.tgz#72b6f70cd73a6f18f42e5f60abaf835d7f127df1"
-  integrity sha512-/3ohEt2heX1y08baOv+1FUTYZRyTvl9XphTMA7F7Fx7jZCj01daKf1HId0g+6yZaJgpih3JnKZrakejL33i9TQ==
+"@ianwalter/merge@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-2.0.1.tgz#80d87df43c0626896981e0793ff93a4b8db4e45b"
+  integrity sha512-EU5xWA1ABUBMwSXs3fQUYQpugfkBV/trr+SpN7mVh6dVyu+8dhl7Ma+KYPIbE7I8Xs5Hr9k9Ollz8juN0Hw59Q==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
