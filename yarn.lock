@@ -763,11 +763,12 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
   integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
 
-"@ianwalter/dist@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-1.5.1.tgz#be3d40a1c307bd86c61f945b62010b47a89b3900"
-  integrity sha512-YE5L1GvGWa+DwvfUzLjz8J1zlgv3zHAyaBsp4IDu15EhgKg1zXA751qAbTD56ASZGQzVRhN+K2cXL+JTUSATGw==
+"@ianwalter/dist@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-2.0.2.tgz#fda0c0c11d9c711eba622f3c5f7d7950adf6998d"
+  integrity sha512-KInWEPKm097FGdlAYZDBKPzJqF7smF95cVz1145ObnU4pxHKJP3tN1DPkqANZMMiRrpK3j0h7DaAB2t9N4snhA==
   dependencies:
+    "@babel/core" "^7.2.2"
     "@ianwalter/npm-short-name" "^1.0.0"
     "@ianwalter/promise-complete" "^3.0.1"
     chalk "^2.4.2"
@@ -3223,6 +3224,11 @@ esm@^3.1.3:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.1.4.tgz#d75f7c1b16e5be57e0446c267d8c0fda9566983d"
   integrity sha512-GScwIz0110RTNzBmAQEdqaAYkD9zVhj2Jo+jeizjIcdyTw+C6S0Zv/dlPYgfF41hRTu2f1vQYliubzIkusx2gA==
+
+esm@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.4.tgz#0b728b5d6043061bf552197407bf2c630717812b"
+  integrity sha512-wOuWtQCkkwD1WKQN/k3RsyGSSN+AmiUzdKftn8vaC+uV9JesYmQlODJxgXaaRz0LaaFIlUxZaUu5NPiUAjKAAA==
 
 espower-location-detector@^1.0.0:
   version "1.0.0"
