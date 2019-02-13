@@ -6,7 +6,7 @@ import VuexReset from '.'
 
 Vue.use(Vuex)
 
-test('plugin resets state when trigger mutation executed', t => {
+test('state is reset when trigger mutation executed', t => {
   const state = { message: 'Hello!' }
   const store = new Vuex.Store({
     plugins: [VuexReset()],
@@ -24,7 +24,7 @@ test('plugin resets state when trigger mutation executed', t => {
   t.deepEqual(store.state, state)
 })
 
-test('plugin resets only module state when module mutation executed', t => {
+test('only module state is reset when module mutation executed', t => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
@@ -58,7 +58,40 @@ test('plugin resets only module state when module mutation executed', t => {
   t.deepEqual(store.state.song, songState)
 })
 
-test('plugin uses ssr state but can reset to initial state', t => {
+test('module state can be reset when registered dynamically', t => {
+  const rootMessage = 'Yo!'
+  const songName = 'One Touch'
+  const state = { message: 'Hello!' }
+  const songState = { name: 'Messy Love', collections: [] }
+  const song = {
+    namespaced: true,
+    state: clone(songState),
+    mutations: {
+      name: (state, name) => (state.name = name),
+      collection: (state, collection) => state.collections.push(collection),
+      reset: () => {}
+    }
+  }
+  const store = new Vuex.Store({
+    plugins: [VuexReset()],
+    state: clone(state),
+    mutations: {
+      message: (state, message) => (state.message = message),
+      reset: () => {}
+    }
+  })
+  store.registerModuleState('song', song)
+  store.commit('message', rootMessage)
+  store.commit('song/name', songName)
+  t.is(store.state.song.name, songName)
+  store.commit('song/collection', 'Summer')
+  t.deepEqual(store.state.song.collections, ['Summer'])
+  store.commit('song/reset')
+  t.is(store.state.message, rootMessage)
+  t.deepEqual(store.state.song, songState)
+})
+
+test('ssr state is used but can reset to initial state', t => {
   const message = 'Yo!'
   const state = { message: 'Hello!', song: 'The Wheel' }
   const store = new Vuex.Store({
@@ -73,7 +106,7 @@ test('plugin uses ssr state but can reset to initial state', t => {
   t.deepEqual(store.state, state)
 })
 
-test('plugin keeps current route state if it exists when reset', t => {
+test('current route state is kept if it exists when reset', t => {
   const state = { message: 'Hello!' }
   const route = { path: '/' }
   const path = '/welcome'

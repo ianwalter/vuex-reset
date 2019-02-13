@@ -38,5 +38,15 @@ export default function VuexReset (opts = {}) {
         }
       }
     })
+
+    store.registerModuleState = (namespace, mod) => {
+      store.registerModule(namespace, mod)
+      initialState[namespace] = clone(mod.state)
+    }
+
+    store.unregisterModuleState = namespace => {
+      store.unregisterModule(namespace)
+      delete initialState[namespace]
+    }
   }
 }
