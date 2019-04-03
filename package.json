@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/vuex-reset",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A Vuex plugin that makes restoring initial state to the store simple",
   "main": "dist/vuex-reset.js",
   "browser": "dist/vuex-reset.js",
@@ -94,9 +94,9 @@
   "eslintIgnore": [
     "dist"
   ],
-	"ava": {
-		"require": [
-			"esm"
-		]
-	}
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
 }
