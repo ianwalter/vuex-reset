@@ -28,7 +28,7 @@ test('only module state is reset when module mutation executed', t => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
-  const songState = { name: 'Messy Love', collections: [] }
+  const songState = { name: 'Messy Love', collections: [], map: {} }
   const store = new Vuex.Store({
     plugins: [VuexReset()],
     state: clone(state),
@@ -42,7 +42,10 @@ test('only module state is reset when module mutation executed', t => {
         state: clone(songState),
         mutations: {
           name: (state, name) => (state.name = name),
-          collection: (state, collection) => state.collections.push(collection),
+          collection: (state, collection) => {
+            state.collections.push(collection)
+            state.map[collection] = 1
+          },
           reset: () => {}
         }
       }
@@ -53,6 +56,7 @@ test('only module state is reset when module mutation executed', t => {
   t.is(store.state.song.name, songName)
   store.commit('song/collection', 'Summer')
   t.deepEqual(store.state.song.collections, ['Summer'])
+  t.deepEqual(store.state.song.map, { 'Summer': 1 })
   store.commit('song/reset')
   t.is(store.state.message, rootMessage)
   t.deepEqual(store.state.song, songState)
