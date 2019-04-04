@@ -33,7 +33,10 @@ export default function VuexReset (opts = {}) {
 
         if (mut === trigger) {
           // Reset the state for the module containing the mutation.
-          store.replaceState({ ...clone(state), [mod]: initialState[mod] })
+          store.replaceState({
+            ...clone(state),
+            [mod]: clone(initialState[mod])
+          })
         }
       }
     })

@@ -60,6 +60,9 @@ test('only module state is reset when module mutation executed', t => {
   store.commit('song/reset')
   t.is(store.state.message, rootMessage)
   t.deepEqual(store.state.song, songState)
+  store.commit('song/collection', 'Dance')
+  store.commit('reset')
+  t.deepEqual(store.state.song, songState)
 })
 
 test('module state can be reset when registered dynamically', t => {
