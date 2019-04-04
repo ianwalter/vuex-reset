@@ -40,21 +40,15 @@
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
     "@ianwalter/babel-preset-lib": "^1.0.3",
-    "@ianwalter/dist": "^3.0.0",
+    "@ianwalter/dist": "^3.0.1",
     "@ianwalter/dracula": "^2.0.0",
+    "@ianwalter/eslint-config-vue": "^1.2.0",
     "@ianwalter/prism-loader": "^1.2.0",
     "ava": "^1.2.1",
     "babel-loader": "^8.0.5",
     "bootstrap": "^4.2.1",
     "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^2.1.0",
-    "eslint": "^5.13.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.1.0",
     "esm": "^3.2.4",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
@@ -80,16 +74,8 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "eslint:recommended",
-      "standard",
-      "plugin:vue/recommended"
-    ],
-    "plugins": [
-      "vue"
-    ],
-    "rules": {
-      "vue/multiline-html-element-content-newline": 0
-    }
+      "@ianwalter/vue"
+    ]
   },
   "eslintIgnore": [
     "dist"
