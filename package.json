@@ -3,11 +3,11 @@
   "version": "2.1.2",
   "description": "A Vuex plugin that makes restoring initial state to the store simple",
   "main": "dist/vuex-reset.js",
-  "browser": "dist/vuex-reset.js",
+  "browser": "dist/vuex-reset.browser.js",
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint index.js test.js site --ext js,vue",
-    "pretest": "dist --babel --no-cjs",
+    "pretest": "dist --babel",
     "test": "ava",
     "build:site": "webpack --env.singleRun"
   },
