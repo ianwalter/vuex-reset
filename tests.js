@@ -1,12 +1,12 @@
-import test from 'ava'
-import Vue from 'vue'
-import Vuex from 'vuex'
-import clone from '@ianwalter/clone'
-import VuexReset from '.'
+const { test } = require('@ianwalter/bff')
+const Vue = require('vue')
+const Vuex = require('vuex')
+const clone = require('@ianwalter/clone')
+const VuexReset = require('.')
 
 Vue.use(Vuex)
 
-test('state is reset when trigger mutation executed', t => {
+test('state is reset when trigger mutation executed', ctx => {
   const state = { message: 'Hello!' }
   const store = new Vuex.Store({
     plugins: [VuexReset()],
@@ -18,13 +18,13 @@ test('state is reset when trigger mutation executed', t => {
   })
   store.commit('message', 'Greetings!')
   store.commit('reset')
-  t.deepEqual(store.state, state)
+  ctx.expect(store.state).toEqual(state)
   store.commit('message', 'Yo!')
   store.commit('reset')
-  t.deepEqual(store.state, state)
+  ctx.expect(store.state).toEqual(state)
 })
 
-test('only module state is reset when module mutation executed', t => {
+test('only module state is reset when module mutation executed', ctx => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
@@ -53,19 +53,19 @@ test('only module state is reset when module mutation executed', t => {
   })
   store.commit('message', rootMessage)
   store.commit('song/name', songName)
-  t.is(store.state.song.name, songName)
+  ctx.expect(store.state.song.name).toBe(songName)
   store.commit('song/collection', 'Summer')
-  t.deepEqual(store.state.song.collections, ['Summer'])
-  t.deepEqual(store.state.song.map, { 'Summer': 1 })
+  ctx.expect(store.state.song.collections).toEqual(['Summer'])
+  ctx.expect(store.state.song.map).toEqual({ 'Summer': 1 })
   store.commit('song/reset')
-  t.is(store.state.message, rootMessage)
-  t.deepEqual(store.state.song, songState)
+  ctx.expect(store.state.message).toBe(rootMessage)
+  ctx.expect(store.state.song).toEqual(songState)
   store.commit('song/collection', 'Dance')
   store.commit('reset')
-  t.deepEqual(store.state.song, songState)
+  ctx.expect(store.state.song).toEqual(songState)
 })
 
-test('module state can be reset when registered dynamically', t => {
+test('module state can be reset when registered dynamically', ctx => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
@@ -90,15 +90,15 @@ test('module state can be reset when registered dynamically', t => {
   store.registerModuleState('song', song)
   store.commit('message', rootMessage)
   store.commit('song/name', songName)
-  t.is(store.state.song.name, songName)
+  ctx.expect(store.state.song.name).toBe(songName)
   store.commit('song/collection', 'Summer')
-  t.deepEqual(store.state.song.collections, ['Summer'])
+  ctx.expect(store.state.song.collections).toEqual(['Summer'])
   store.commit('song/reset')
-  t.is(store.state.message, rootMessage)
-  t.deepEqual(store.state.song, songState)
+  ctx.expect(store.state.message).toEqual(rootMessage)
+  ctx.expect(store.state.song).toEqual(songState)
 })
 
-test('ssr state is used but can reset to initial state', t => {
+test('ssr state is used but can reset to initial state', ctx => {
   const message = 'Yo!'
   const state = { message: 'Hello!', song: 'The Wheel' }
   const store = new Vuex.Store({
@@ -108,12 +108,12 @@ test('ssr state is used but can reset to initial state', t => {
       reset: () => true
     }
   })
-  t.is(store.state.message, message)
+  ctx.expect(store.state.message).toBe(message)
   store.commit('reset')
-  t.deepEqual(store.state, state)
+  ctx.expect(store.state).toEqual(state)
 })
 
-test('current route state is kept if it exists when reset', t => {
+test('current route state is kept if it exists when reset', ctx => {
   const state = { message: 'Hello!' }
   const route = { path: '/' }
   const path = '/welcome'
@@ -137,6 +137,6 @@ test('current route state is kept if it exists when reset', t => {
   store.commit('route/path', path)
   store.commit('message', 'Greetings!')
   store.commit('reset')
-  t.is(store.state.message, state.message)
-  t.is(store.state.route.path, path)
+  ctx.expect(store.state.message).toBe(state.message)
+  ctx.expect(store.state.route.path).toBe(path)
 })
