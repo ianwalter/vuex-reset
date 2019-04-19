@@ -691,10 +691,10 @@
     "@babel/plugin-transform-runtime" "^7.2.0"
     "@babel/preset-env" "^7.3.1"
 
-"@ianwalter/bff@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-2.10.0.tgz#ac57ff0dbef86a5ff8b61a6feb82f7f4bd8808b3"
-  integrity sha512-nPMbXthsDMBUwOzIxbsUmP8GC8vr3Ech3Bx9OeVGYkvBRUay7MiNZAIgbMOPjXYFkq/RVFmhE9lx9f0rVOCsVw==
+"@ianwalter/bff@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-3.0.0.tgz#16d55d6540ffa780a14fd63d8d93b65e92efbd42"
+  integrity sha512-9R58f2fqvVWCiqJn31hEbor6jJCCsbBGxtR/OKYZyn7MeZy/NOn04xVszZk/oVcqo5S0zZiEloO0LQfkp/iQaA==
   dependencies:
     "@ianwalter/cli" "^1.0.0"
     "@ianwalter/print" "^2.3.0"
