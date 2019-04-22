@@ -691,12 +691,12 @@
     "@babel/plugin-transform-runtime" "^7.2.0"
     "@babel/preset-env" "^7.3.1"
 
-"@ianwalter/bff@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-2.10.0.tgz#ac57ff0dbef86a5ff8b61a6feb82f7f4bd8808b3"
-  integrity sha512-nPMbXthsDMBUwOzIxbsUmP8GC8vr3Ech3Bx9OeVGYkvBRUay7MiNZAIgbMOPjXYFkq/RVFmhE9lx9f0rVOCsVw==
+"@ianwalter/bff@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-3.1.1.tgz#71ae7a6ae37e49dfc154427f2d36c40e01885c97"
+  integrity sha512-iV1RHdJihhAA7F2Icd9A1Cyy4kxTyKlXarPsqASiCcfOqiHcAuW0n8U2kItMCsw+t35Ymx6NITu1IcbrdTu8HQ==
   dependencies:
-    "@ianwalter/cli" "^1.0.0"
+    "@ianwalter/cli" "^1.1.1"
     "@ianwalter/print" "^2.3.0"
     common-tags "^1.8.0"
     expect "^24.7.1"
@@ -706,11 +706,13 @@
     p-timeout "^3.1.0"
     workerpool "^3.1.2"
 
-"@ianwalter/cli@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/cli/-/cli-1.0.0.tgz#73d803468c11bde5afac4b5eedfc4ac33ae36f12"
-  integrity sha512-MDcYFW9Ksb2jHfQ/v2QJRsEp/5Raz9FxUx2GLGjLWuqfk1GwWOGxJ9As7tJAuE9stVbZa1o/Gi753QWb8PZzQw==
+"@ianwalter/cli@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cli/-/cli-1.1.1.tgz#544ea8d0dbd207aaf867e01e861be908c161ae7d"
+  integrity sha512-N7cdoA2llrZDqifD09aqFuwS4iUlxDHea5Wn29TIyEcYHo3JHjwfkjKOdKSqa3t7/KZqod5OEOWd8dKDqc6HMA==
   dependencies:
+    "@ianwalter/merge" "^3.0.0"
+    dot-prop "^5.0.0"
     getopts "^2.2.4"
     pkg-conf "^3.1.0"
     yargs "^13.2.2"
@@ -2759,6 +2761,13 @@ dot-prop@^4.1.0, dot-prop@^4.1.1:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
   integrity sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
+  dependencies:
+    is-obj "^1.0.0"
+
+dot-prop@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.0.0.tgz#64b7968af349c3a9f966aa12658dbd5829f6b953"
+  integrity sha512-RTmaF2jx3nOBO2GvtFqjnDLycjFUMqt+2pwRx7JVYa81lDauoj9aNkyrJI2ikR58FbBIchiIlRiGG+muLJ4oHQ==
   dependencies:
     is-obj "^1.0.0"
 
