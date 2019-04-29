@@ -6,7 +6,7 @@
   "browser": "dist/vuex-reset.browser.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "eslint index.js test.js site --ext js,vue",
+    "lint": "eslint index.js tests.js site --ext js,vue",
     "pretest": "dist --babel",
     "test": "bff",
     "build:site": "webpack --env.singleRun"
@@ -33,7 +33,7 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.3.1",
+    "@babel/runtime-corejs3": "^7.4.4",
     "@ianwalter/clone": "^2.0.1",
     "@ianwalter/merge": "^3.0.0"
   },
@@ -50,7 +50,6 @@
     "bootstrap": "^4.2.1",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.0",
-    "esm": "^3.2.4",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
     "np": "^4.0.2",
@@ -64,9 +63,7 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.10"
   },
-  "browserslist": [
-    "> 0.5%"
-  ],
+  "browserslist": "> 2%, not dead",
   "babel": {
     "presets": [
       "@ianwalter/lib"
@@ -81,11 +78,6 @@
   "eslintIgnore": [
     "dist"
   ],
-  "ava": {
-    "require": [
-      "esm"
-    ]
-  },
   "renovate": {
     "extends": [
       "@ianwalter"
