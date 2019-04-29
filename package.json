@@ -49,7 +49,7 @@
     "babel-loader": "^8.0.5",
     "bootstrap": "^4.3.1",
     "clean-webpack-plugin": "^2.0.1",
-    "css-loader": "^2.1.0",
+    "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
     "np": "^4.0.2",
