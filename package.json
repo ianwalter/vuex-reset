@@ -33,7 +33,7 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.3.1",
+    "@babel/runtime": "^7.4.4",
     "@ianwalter/clone": "^2.0.1",
     "@ianwalter/merge": "^3.0.0"
   },
