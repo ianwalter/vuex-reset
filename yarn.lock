@@ -594,7 +594,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1":
+"@babel/runtime@^7.2.0":
   version "7.4.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.3.tgz#79888e452034223ad9609187a0ad1fe0d2ad4bdc"
   integrity sha512-9lsJwJLxDh/T3Q3SZszfWOTkk3pHbkmH+3KY+zwIDmsNlxsumuhS2TH3NIpktU4kNvfzy+k3eLT7aTJSPTo0OA==
@@ -723,10 +723,12 @@
     pkg-conf "^3.1.0"
     yargs "^13.2.2"
 
-"@ianwalter/clone@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-2.0.1.tgz#c9f37e2d13e386d3a63e632e6a6199fd44d71bed"
-  integrity sha512-SiDz8Vh59ZzQk98HKxf54j5D/ER0hV8hPU78Lw5I5YzdJJUQK/pZGBQJO0bfJsNVmy8eAbjYR7N1IR0Mn1qsNg==
+"@ianwalter/clone@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-3.0.0.tgz#5cb246f10e4661ee202dc255fb72c58d6d9982fa"
+  integrity sha512-mTL5VKdmhEG0gZARKnRawdyqVaFzaACnMQt/Kxf7LNgoZctw8c3/KmYmDb6TCKjDGhHktJyEF87sDQw73RPWoQ==
+  dependencies:
+    "@babel/runtime-corejs3" "^7.4.4"
 
 "@ianwalter/dist@^3.1.0":
   version "3.1.0"
@@ -782,12 +784,12 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/log/-/log-3.0.0.tgz#c85f7343e28e98d0a4c872a42e6bdd6d8b302e8d"
   integrity sha512-CAB1LaZUDUvQexuZYXmRhaFrpNqguIwA+ciB8+uvDm9dakNX3H+Yd7VIOisvx/y4GljH2hSrlTfCzhy14/0/YQ==
 
-"@ianwalter/merge@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-3.0.0.tgz#f2b88f73d7491e1d1f13a4cfd35a8dc452c0ad5e"
-  integrity sha512-SrJt5zo4BjRHKQ6U0ErJlVgXQA2HLYRL1nGd8Vti84rbztwrsmwhxKUSsOHQWEY7/8MqlR2O22oDPJdLnIQ9RQ==
+"@ianwalter/merge@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-4.0.0.tgz#3b7fc3dbe11524f28329ad86c41137b5cc47b549"
+  integrity sha512-ne2wO/KT1NeaeYVoRLDkrKq2q72q9EgvgVP62l8XZddyXxVjgk/D3Bh4WnDD6X3PKEs/meB9L1oTuQKx03xEFA==
   dependencies:
-    "@babel/runtime" "^7.3.1"
+    "@babel/runtime-corejs3" "^7.4.4"
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
