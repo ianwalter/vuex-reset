@@ -52,7 +52,7 @@
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "np": "^4.0.2",
+    "np": "^5.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "style-loader": "^0.23.1",
     "vue": "^2.6.10",
