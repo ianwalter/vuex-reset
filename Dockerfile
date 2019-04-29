@@ -1,4 +1,4 @@
-FROM appjumpstart/station:v1.0.0
+FROM appjumpstart/station:1.0.1
 
 COPY site/dist .
 
