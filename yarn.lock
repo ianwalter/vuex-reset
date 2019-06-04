@@ -839,10 +839,10 @@
     "@babel/plugin-transform-runtime" "^7.4.4"
     "@babel/preset-env" "^7.4.4"
 
-"@ianwalter/bff@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-5.2.0.tgz#9a556ed31d869d0158e3ea5cf4aca338c4d7e86e"
-  integrity sha512-J+hJppPAyvQ0EjIgF6TNLQC3xM9iriRe9T9+jfxcgW993Y8RwAbjCC30tsRm58nBHWdS8qT0RVPNBlGOsDUKPQ==
+"@ianwalter/bff@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-5.2.1.tgz#7f3ffe44e041549e89a261f191d2c06a37520997"
+  integrity sha512-3ou9CePCfAiO08BolpeBsMeW6PogeN8vvNRghz5WmLYs169TUrKAj7vEt0wEx5ubBEQPQ0PRqOVLZ3Iy2uifUw==
   dependencies:
     "@ianwalter/cli" "^1.1.1"
     "@ianwalter/print" "^2.3.1"
@@ -856,7 +856,7 @@
     p-timeout "^3.1.0"
     puppeteer "^1.17.0"
     tempy "^0.3.0"
-    webpack "^4.32.2"
+    webpack "^4.33.0"
     workerpool "^3.1.2"
 
 "@ianwalter/cli@^1.1.1":
@@ -9120,36 +9120,6 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
   dependencies:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
-
-webpack@^4.32.2:
-  version "4.32.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.32.2.tgz#3639375364a617e84b914ddb2c770aed511e5bc8"
-  integrity sha512-F+H2Aa1TprTQrpodRAWUMJn7A8MgDx82yQiNvYMaj3d1nv3HetKU0oqEulL9huj8enirKi8KvEXQ3QtuHF89Zg==
-  dependencies:
-    "@webassemblyjs/ast" "1.8.5"
-    "@webassemblyjs/helper-module-context" "1.8.5"
-    "@webassemblyjs/wasm-edit" "1.8.5"
-    "@webassemblyjs/wasm-parser" "1.8.5"
-    acorn "^6.0.5"
-    acorn-dynamic-import "^4.0.0"
-    ajv "^6.1.0"
-    ajv-keywords "^3.1.0"
-    chrome-trace-event "^1.0.0"
-    enhanced-resolve "^4.1.0"
-    eslint-scope "^4.0.0"
-    json-parse-better-errors "^1.0.2"
-    loader-runner "^2.3.0"
-    loader-utils "^1.1.0"
-    memory-fs "~0.4.1"
-    micromatch "^3.1.8"
-    mkdirp "~0.5.0"
-    neo-async "^2.5.0"
-    node-libs-browser "^2.0.0"
-    schema-utils "^1.0.0"
-    tapable "^1.1.0"
-    terser-webpack-plugin "^1.1.0"
-    watchpack "^1.5.0"
-    webpack-sources "^1.3.0"
 
 webpack@^4.33.0:
   version "4.33.0"
