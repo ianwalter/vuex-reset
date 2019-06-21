@@ -40,7 +40,7 @@
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
     "@ianwalter/babel-preset-lib": "^2.0.2",
-    "@ianwalter/bff": "^5.2.1",
+    "@ianwalter/bff": "^6.2.0",
     "@ianwalter/dist": "^4.0.0",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/eslint-config-vue": "^1.2.1",
