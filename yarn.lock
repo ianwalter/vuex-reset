@@ -887,13 +887,13 @@
     "@babel/plugin-transform-runtime" "^7.4.4"
     "@babel/preset-env" "^7.4.4"
 
-"@ianwalter/bff@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.2.0.tgz#502cc2c6808d349e76464ef2b68b6b892a8f1e84"
-  integrity sha512-BYVUrx2sqy3fxw+3P3ad4kXEFQBOktKF6VUneAMXHBhqfyxppPMWPZDCGRCfa6aSftN8uTDqWtES2KfDNcMx+Q==
+"@ianwalter/bff@^6.3.1":
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-6.3.1.tgz#7f426ab5b93b5d28bb7d72ea91a482b638fa7ea2"
+  integrity sha512-33OLydTrvMSS7rFwDOkCn2a3+FTckQLdR5WVM6KQQscU/q7UuBrN4bNTVlrlTWF4M+omzr0cvDkgKY5SVKa8Bg==
   dependencies:
     "@ianwalter/cli" "^1.1.1"
-    "@ianwalter/print" "^3.0.0"
+    "@ianwalter/print" "^3.0.1"
     common-tags "^1.8.0"
     expect "^24.8.0"
     globby "^9.2.0"
@@ -1013,14 +1013,14 @@
     has-ansi "^3.0.0"
     has-emoji "^1.0.0"
 
-"@ianwalter/print@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.0.0.tgz#3da7bafed24c5686f939f5bfaead2a64d8e190fe"
-  integrity sha512-llCT8f328CSznMnHP6MentK/kEh8lyPGZms+/f5FRUbx9uT8X9NXPEpueZAA13Cjn+IFHBnPitLYym4xRmvy8Q==
+"@ianwalter/print@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.0.1.tgz#73d81f83fcb6366331704985e0c7ebe8c914a812"
+  integrity sha512-g2QKEUaOuhKR2WdY0nPXbBPA1KifKAH/9u47JdIIizkJQB+Mq1Pd6yLRKiaEQWQCUiPag3gIch+2YHVC4M1nPQ==
   dependencies:
     "@ianwalter/log" "^3.0.0"
     chalk "^2.4.2"
-    chromafi "^2.1.0"
+    chromafi ianwalter/chromafi
     has-ansi "^3.0.0"
     has-emoji "^1.0.0"
 
@@ -2259,10 +2259,10 @@ chownr@^1.1.1:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
   integrity sha512-j38EvO5+LHX84jlo6h4UzmOwi0UgW61WRyPtJz4qaadK5eY3BTS5TY/S1Stc3Uk2lIM6TPevAlULiEJwie860g==
 
-chromafi@^2.1.0:
+chromafi@ianwalter/chromafi:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chromafi/-/chromafi-2.1.0.tgz#cb3731f66d1d0f0f527bcde1736754a86ebfdab7"
-  integrity sha512-H51kiwj2dZGWp2cOz/OWsZ8rAD2ZdMnNl7IQSRWR4wco3fpikYaFFKeAfGal+2aSey5Rh6v6cMyF57IxJhEc7w==
+  uid "5fc4e4335f56501152bfa339f7e7c1f2c785959c"
+  resolved "https://codeload.github.com/ianwalter/chromafi/tar.gz/5fc4e4335f56501152bfa339f7e7c1f2c785959c"
   dependencies:
     ansi-mark "^1.0.0"
     ansi-regex "^3.0.0"
@@ -2274,7 +2274,6 @@ chromafi@^2.1.0:
     detect-indent "^5.0.0"
     he "^1.1.1"
     highlight.js "^9.12.0"
-    husky "^0.14.3"
     min-indent "^1.0.0"
     strip-ansi "^4.0.0"
     strip-indent "^2.0.0"
@@ -4496,15 +4495,6 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
-  integrity sha512-e21wivqHpstpoiWA/Yi8eFti8E+sQDSS53cpJsPptPs295QTOQR0ZwnHo2TXy1XOpZFD9rPOd3NpmqTK6uMLJA==
-  dependencies:
-    is-ci "^1.0.10"
-    normalize-path "^1.0.0"
-    strip-indent "^2.0.0"
-
 iconv-lite@0.4.24, iconv-lite@^0.4.17, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -5991,11 +5981,6 @@ normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-
     resolve "^1.10.0"
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
-
-normalize-path@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-1.0.0.tgz#32d0e472f91ff345701c15a8311018d3b0a90379"
-  integrity sha1-MtDkcvkf80VwHBWoMRAY07CpA3k=
 
 normalize-path@^2.1.1:
   version "2.1.1"
