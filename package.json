@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "@babel/runtime-corejs3": "^7.4.5",
-    "@ianwalter/clone": "^3.0.0",
+    "@ianwalter/clone": "^4.0.0",
     "@ianwalter/merge": "^4.0.0"
   },
   "devDependencies": {

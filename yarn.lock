@@ -914,12 +914,10 @@
     pkg-conf "^3.1.0"
     yargs "^13.2.2"
 
-"@ianwalter/clone@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-3.0.0.tgz#5cb246f10e4661ee202dc255fb72c58d6d9982fa"
-  integrity sha512-mTL5VKdmhEG0gZARKnRawdyqVaFzaACnMQt/Kxf7LNgoZctw8c3/KmYmDb6TCKjDGhHktJyEF87sDQw73RPWoQ==
-  dependencies:
-    "@babel/runtime-corejs3" "^7.4.4"
+"@ianwalter/clone@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-4.0.0.tgz#f13482cb1c1ae4536d15e4129ade52d182dcd019"
+  integrity sha512-llSNiU9CllQA+5sAB/e+ub/XBq0hXAMG/sVx+lovCP5IwaxVtcB2sv+Eufu+clyxop5G42Iu+E7lsOOGmBaqqg==
 
 "@ianwalter/dist@^5.0.1":
   version "5.0.1"
