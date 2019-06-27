@@ -989,12 +989,10 @@
   dependencies:
     "@babel/runtime" "^7.3.1"
 
-"@ianwalter/merge@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-4.0.0.tgz#3b7fc3dbe11524f28329ad86c41137b5cc47b549"
-  integrity sha512-ne2wO/KT1NeaeYVoRLDkrKq2q72q9EgvgVP62l8XZddyXxVjgk/D3Bh4WnDD6X3PKEs/meB9L1oTuQKx03xEFA==
-  dependencies:
-    "@babel/runtime-corejs3" "^7.4.4"
+"@ianwalter/merge@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-5.0.0.tgz#972b3cd668ab87416fba1af99186cd83d34d687f"
+  integrity sha512-Z+Xn8dT0ApkjGizdwMQaCgsAyHO+zKhCC2OYO7lEYLs1IdCzXtRUYah3vkIWT8/Ad94ni0rxtR39VTRWJE1/Qw==
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
