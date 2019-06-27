@@ -6,8 +6,8 @@
   "browser": "dist/vuex-reset.browser.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "eslint index.js tests.js site --ext js,vue",
-    "pretest": "dist --babel",
+    "lint": "eslint --ext js,vue .",
+    "pretest": "dist",
     "test": "bff",
     "build:site": "webpack --env.singleRun"
   },
@@ -33,13 +33,11 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.4.5",
-    "@ianwalter/clone": "^3.0.0",
-    "@ianwalter/merge": "^4.0.0"
+    "@ianwalter/clone": "^4.0.0",
+    "@ianwalter/merge": "^5.0.0"
   },
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
-    "@ianwalter/babel-preset-lib": "^2.0.2",
     "@ianwalter/bff": "^6.3.1",
     "@ianwalter/dist": "^5.0.1",
     "@ianwalter/dracula": "^2.0.0",
@@ -64,11 +62,6 @@
     "webpack-dev-server": "^3.7.2"
   },
   "browserslist": "> 2%, not dead",
-  "babel": {
-    "presets": [
-      "@ianwalter/lib"
-    ]
-  },
   "eslintConfig": {
     "root": true,
     "extends": [
@@ -76,7 +69,8 @@
     ]
   },
   "eslintIgnore": [
-    "dist"
+    "dist",
+    "site/dist"
   ],
   "renovate": {
     "extends": [
