@@ -56,7 +56,7 @@ test('only module state is reset when module mutation executed', ctx => {
   ctx.expect(store.state.song.name).toBe(songName)
   store.commit('song/collection', 'Summer')
   ctx.expect(store.state.song.collections).toEqual(['Summer'])
-  ctx.expect(store.state.song.map).toEqual({ 'Summer': 1 })
+  ctx.expect(store.state.song.map).toEqual({ Summer: 1 })
   store.commit('song/reset')
   ctx.expect(store.state.message).toBe(rootMessage)
   ctx.expect(store.state.song).toEqual(songState)
