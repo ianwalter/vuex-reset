@@ -41,7 +41,7 @@
     "@ianwalter/bff": "^6.4.0",
     "@ianwalter/dist": "^5.1.0",
     "@ianwalter/dracula": "^2.0.0",
-    "@ianwalter/eslint-config-vue": "^1.2.1",
+    "@ianwalter/eslint-config-vue": "^2.0.0",
     "@ianwalter/prism-loader": "^1.2.0",
     "@ianwalter/release": "^1.1.7",
     "@ianwalter/renovate-config": "^1.1.1",
