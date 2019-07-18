@@ -278,10 +278,10 @@
     rehype-prism "^0.0.2"
     unified "^7.0.2"
 
-"@ianwalter/release@^1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@ianwalter/release/-/release-1.1.7.tgz#aa7d08467f41a3fdc8e6ad0e53a0f9343d8ffb56"
-  integrity sha512-Qy8AOnuvIewtGV64A+GkarYhEbOUU0B0PRmwuf3oiZRbmmB0RCn0YZunsWlmsttjWitwe0kDNKi0FMFuGnr5rQ==
+"@ianwalter/release@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@ianwalter/release/-/release-1.1.8.tgz#d5b699b8a4c5ed45f30f3df7bae693f9f37567ff"
+  integrity sha512-IW8oJ6StnQoMI+WGKWK71DW9w0JsU3fChGI2pGtI6X3AuH9cA0ywOZoAQKTAsG3jDQRNpMpVJhtsljRSTXuSwg==
   dependencies:
     "@ianwalter/cli" "^1.2.0"
     "@ianwalter/commits" "^0.0.5"
