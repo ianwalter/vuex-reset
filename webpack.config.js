@@ -1,6 +1,6 @@
 const { join } = require('path')
 
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -26,7 +26,7 @@ module.exports = (env = {}) => ({
   },
   plugins: [
     ...(env.singleRun ? [
-      new CleanWebpackPlugin(['site/dist'])
+      new CleanWebpackPlugin()
     ] : []),
     new HtmlWebpackPlugin({ template: './site/index.html' }),
     new VueLoaderPlugin(),

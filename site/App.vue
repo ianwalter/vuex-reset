@@ -36,13 +36,6 @@
           >
         </a>
 
-        <a href="https://dev.azure.com/ianwalter/vuex-reset/_build">
-          <img
-            src="https://dev.azure.com/ianwalter/vuex-reset/_apis/build/status/ianwalter.vuex-reset"
-            alt="build status"
-          >
-        </a>
-
       </div>
     </header>
 
