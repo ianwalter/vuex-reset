@@ -33,7 +33,7 @@
     "dist"
   ],
   "dependencies": {
-    "@ianwalter/clone": "^4.0.0",
+    "@ianwalter/clone": "^4.1.0",
     "@ianwalter/merge": "^5.0.0"
   },
   "devDependencies": {

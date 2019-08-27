@@ -242,11 +242,6 @@
     getopts "^2.2.5"
     read-pkg-up "^6.0.0"
 
-"@ianwalter/clone@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-4.0.0.tgz#f13482cb1c1ae4536d15e4129ade52d182dcd019"
-  integrity sha512-llSNiU9CllQA+5sAB/e+ub/XBq0hXAMG/sVx+lovCP5IwaxVtcB2sv+Eufu+clyxop5G42Iu+E7lsOOGmBaqqg==
-
 "@ianwalter/clone@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-4.1.0.tgz#635860922699338da607b8e990ae5173e3e3e9c9"
