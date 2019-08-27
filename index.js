@@ -29,7 +29,8 @@ export default function VuexReset (opts = {}) {
         store.replaceState(newState)
       } else {
         // Extract the name of the module and mutation.
-        const [mod, mut] = mutation.type.split('/')
+        const mod = mutation.type.split('/')
+        const mut = mod.pop()
 
         if (mut === trigger) {
           // Reset the state for the module containing the mutation.
