@@ -37,7 +37,7 @@ test('only module state is reset when module mutation executed', ctx => {
       reset: () => {}
     },
     modules: {
-      song: {
+      'sample/song': {
         namespaced: true,
         state: clone(songState),
         mutations: {
@@ -52,17 +52,17 @@ test('only module state is reset when module mutation executed', ctx => {
     }
   })
   store.commit('message', rootMessage)
-  store.commit('song/name', songName)
-  ctx.expect(store.state.song.name).toBe(songName)
-  store.commit('song/collection', 'Summer')
-  ctx.expect(store.state.song.collections).toEqual(['Summer'])
-  ctx.expect(store.state.song.map).toEqual({ Summer: 1 })
-  store.commit('song/reset')
+  store.commit('sample/song/name', songName)
+  ctx.expect(store.state['sample/song'].name).toBe(songName)
+  store.commit('sample/song/collection', 'Summer')
+  ctx.expect(store.state['sample/song'].collections).toEqual(['Summer'])
+  ctx.expect(store.state['sample/song'].map).toEqual({ Summer: 1 })
+  store.commit('sample/song/reset')
   ctx.expect(store.state.message).toBe(rootMessage)
-  ctx.expect(store.state.song).toEqual(songState)
-  store.commit('song/collection', 'Dance')
+  ctx.expect(store.state['sample/song']).toEqual(songState)
+  store.commit('sample/song/collection', 'Dance')
   store.commit('reset')
-  ctx.expect(store.state.song).toEqual(songState)
+  ctx.expect(store.state['sample/song']).toEqual(songState)
 })
 
 test('module state can be reset when registered dynamically', ctx => {
