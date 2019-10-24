@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: node:12.9-slim
+      image: node:12.10-slim
     steps:
       - name: Checkout
         uses: actions/checkout@master

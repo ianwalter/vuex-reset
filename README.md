@@ -4,6 +4,11 @@
 
 [![npm page][npmImage]][npmUrl]
 
+## Resources
+
+* [Spotlight on vuex-reset blog post][postUrl]
+* [Demo site][demoUrl]
+
 ## Installation
 
 ```
@@ -64,14 +69,16 @@ store.commit('car/reset')
 
 ## License
 
-Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
+Hippocratic License - See [LICENSE][licenseUrl]
 
 &nbsp;
 
 Created by [Ian Walter](https://iankwalter.com)
 
+[vuexUrl]: https://github.com/vuejs/vuex
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/vuex-reset
-[vuexUrl]: https://github.com/vuejs/vuex
+[postUrl]: https://ianwalter.dev/spotlight-on-vuex-reset/
+[demoUrl]: https://vuex-reset.ianwalter.dev
 [vueComponentResetUrl]: https://github.com/ianwalter/vue-component-reset
 [licenseUrl]: https://github.com/ianwalter/vuex-reset/blob/master/LICENSE
