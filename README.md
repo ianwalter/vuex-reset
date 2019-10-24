@@ -73,7 +73,7 @@ Hippocratic License - See [LICENSE][licenseUrl]
 
 &nbsp;
 
-Created by [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://ianwalter.dev)
 
 [vuexUrl]: https://github.com/vuejs/vuex
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg
