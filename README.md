@@ -3,6 +3,7 @@
 > simple
 
 [![npm page][npmImage]][npmUrl]
+[![CI][ciImage]][ciUrl]
 
 ## Resources
 
@@ -78,6 +79,8 @@ Created by [Ian Walter](https://ianwalter.dev)
 [vuexUrl]: https://github.com/vuejs/vuex
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/vuex-reset.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/vuex-reset
+[ciImage]: https://github.com/ianwalter/vuex-reset/workflows/CI/badge.svg
+[ciUrl]: https://github.com/ianwalter/vuex-reset/actions
 [postUrl]: https://ianwalter.dev/spotlight-on-vuex-reset/
 [demoUrl]: https://vuex-reset.ianwalter.dev
 [vueComponentResetUrl]: https://github.com/ianwalter/vue-component-reset
