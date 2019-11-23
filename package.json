@@ -19,7 +19,10 @@
     "initial",
     "state"
   ],
-  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "author": {
+    "name": "Ian Walter",
+    "url": "https://ianwalter.dev"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",

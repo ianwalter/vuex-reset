@@ -12,7 +12,7 @@
 
 ## Installation
 
-```
+```console
 yarn add @ianwalter/vuex-reset
 ```
 
