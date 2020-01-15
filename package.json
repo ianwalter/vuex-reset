@@ -46,7 +46,7 @@
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/eslint-config-vue": "^2.0.1",
     "@ianwalter/prism-loader": "^1.2.0",
-    "@ianwalter/release": "^4.0.0",
+    "@ianwalter/release": "^5.0.0",
     "@ianwalter/renovate-config": "^1.2.0",
     "babel-loader": "^8.0.6",
     "bootstrap": "^4.4.1",
