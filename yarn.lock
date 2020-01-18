@@ -202,13 +202,14 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/base-error/-/base-error-6.1.0.tgz#a25f8a57e04877f6823251c5f1e05c7c060a0130"
   integrity sha512-a1oe3gdY7aVJotysd2hbkARZdIXd80b1xL+kcJGQ/5VzEv7bMhQ+vlamv8DLz828uz/dxMCVb4++n75RyVUs2Q==
 
-"@ianwalter/bff@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-8.0.0.tgz#a9c56acdd174218f5cfdc784c054d1ea85bedca8"
-  integrity sha512-fWjR1AY8M+BNGfRi/LLTem7a1VVmibQcgwCgz1ET0AFywGfisne4KPczYl7McUKicHlwv1rYkS13QO8o+09OSw==
+"@ianwalter/bff@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-8.1.0.tgz#0136202194b004b6b22c8e1bdfb6246b145129e6"
+  integrity sha512-TWwnmsfhSZKkLf0DIBFJxdo1U/hRZVBV+0UILpf/pW2MP67C5EmwmTg4hM520YyCuQzT37XBFFNsT4hWlQ8khg==
   dependencies:
     "@ianwalter/cli" "^3.0.0"
     "@ianwalter/print" "^5.0.0"
+    "@ianwalter/subpub" "^2.0.0"
     "@ianwalter/timer" "^1.1.0"
     common-tags "^1.8.0"
     expect "^24.9.0"
