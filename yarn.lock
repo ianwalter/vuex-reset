@@ -340,10 +340,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/base-error/-/base-error-6.1.0.tgz#a25f8a57e04877f6823251c5f1e05c7c060a0130"
   integrity sha512-a1oe3gdY7aVJotysd2hbkARZdIXd80b1xL+kcJGQ/5VzEv7bMhQ+vlamv8DLz828uz/dxMCVb4++n75RyVUs2Q==
 
-"@ianwalter/bff@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.2.0.tgz#8813aba86f7df0cd0c2b44452edc2b2639a5dda9"
-  integrity sha512-oh5gqBdooSBy2q0JS8Icj8Eq3j0O7BusJFwKl/t168chCtyiwqLP27DU6kUeE4/FiRVB9b+3HKWblqAes9OJJg==
+"@ianwalter/bff@^9.2.1":
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.2.1.tgz#7076c0716374f908ed01e92014f2d492d8aed995"
+  integrity sha512-NGzZmBZO2fBgBiNWGNBk3aSGzL8iEm8q2at6PulIwupiuhEaA36VKtbNjuFE3WxN1aYQpSpX9Oy1c30v/rV2Zg==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^4.1.0"
