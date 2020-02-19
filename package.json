@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
-    "@ianwalter/bff": "^9.4.0",
+    "@ianwalter/bff": "^9.4.1",
     "@ianwalter/dist": "^5.3.0",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/eslint-config-vue": "^2.0.1",
