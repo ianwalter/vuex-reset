@@ -37,7 +37,7 @@
   ],
   "dependencies": {
     "@ianwalter/clone": "^5.0.0",
-    "@ianwalter/merge": "^6.0.0"
+    "@ianwalter/merge": "^7.0.0"
   },
   "devDependencies": {
     "@fullhuman/purgecss-loader": "^1.0.0",
