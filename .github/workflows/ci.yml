@@ -8,10 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: node:12.10-slim
+      image: node:13.8
+    timeout-minutes: 3
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Install
         run: yarn
       - name: Lint
