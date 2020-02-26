@@ -13,7 +13,7 @@ export default function VuexReset (opts = {}) {
     // after the initialState is set so that initialState isn't polluted with
     // SSR data and the store can be reset cleanly.
     if (ssr) {
-      store.replaceState(merge(clone(store.state), ssr))
+      store.replaceState(merge(clone(store.state), clone(ssr)))
     }
 
     store.subscribe((mutation, state) => {
