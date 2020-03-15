@@ -331,17 +331,18 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/base-error/-/base-error-6.1.0.tgz#a25f8a57e04877f6823251c5f1e05c7c060a0130"
   integrity sha512-a1oe3gdY7aVJotysd2hbkARZdIXd80b1xL+kcJGQ/5VzEv7bMhQ+vlamv8DLz828uz/dxMCVb4++n75RyVUs2Q==
 
-"@ianwalter/bff@^9.6.0":
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.6.0.tgz#6c844223ddcae96b9bf373a3665f2455e1fe38da"
-  integrity sha512-eKmZKM1dJ8cbZaUbgN0ASi8HDcQkZhU1R0oSvVTuv+rPgR7a+3P6x2X/+WrZiJ0XU0gXGmC9B9kmXe80R9u9nw==
+"@ianwalter/bff@^9.7.0":
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/bff/-/bff-9.7.0.tgz#054817e3406e37ef36d3ff9e2a8ce9e6d24867ba"
+  integrity sha512-0zHxnd/MpPkHcA9Wu8vZGWqqcg3/NzWCfVbjo2ovBNfyHReElakXojcEeoJKZHu8kRV5nyj1CoXoSM7bOd/geg==
   dependencies:
     "@ianwalter/cli" "^4.1.0"
-    "@ianwalter/clone" "^5.0.0"
-    "@ianwalter/cloneable" "^1.0.1"
+    "@ianwalter/clone" "^6.0.1"
+    "@ianwalter/cloneable" "^2.0.0"
     "@ianwalter/print" "^5.3.0"
     "@ianwalter/subpub" "^2.0.0"
     "@ianwalter/timer" "^1.1.0"
+    array-shuffle "^1.0.1"
     callsites "^3.1.0"
     camaro "^4.1.2"
     common-tags "^1.8.0"
@@ -423,10 +424,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/clone/-/clone-6.0.1.tgz#b24e7ae22a8682c58e2ab23061dbc3b288466fad"
   integrity sha512-3dCmuxyyZKUPM7kFI2sf7WxQli7KL6FisH9uOtcGvjmvHOwKW+NHXVwCTD4xfrxEGhu4eAKwO0BN9f8V0YYAKQ==
 
-"@ianwalter/cloneable@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-1.0.1.tgz#627489e86020f035559b263762e1ff6329b8c08e"
-  integrity sha512-1+SjoHTyEMK/UB4ASZpQdArMk2K3RlSptbG0GVeNXLfWeo5H+RdTbhcEk4GUYKEf3SskIXYrS8FvtL02d/6D+g==
+"@ianwalter/cloneable@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/cloneable/-/cloneable-2.0.0.tgz#afe88576cf08e17825509c68185cd7da61354dad"
+  integrity sha512-ZMKux34x/+EJIc6RCu01MmFXbW1rDSCCHvL9Bu81Hy/QGwvYu/lJACXWEbiCC/q7kDfVhA8LWNcLeMsp7G5a/A==
 
 "@ianwalter/commits@^1.0.1":
   version "1.0.1"
@@ -1339,6 +1340,11 @@ array-iterate@^1.0.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-1.1.3.tgz#b116bdb1e37f3c3fec13acdfb91ac829f122543c"
   integrity sha512-7MIv7HE9MuzfK6B2UnWv07oSHBLOaY1UUXAxZ07bIeRM+4IkPTlveMDs9MY//qvxPZPSvCn2XV4bmtQgSkVodg==
+
+array-shuffle@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/array-shuffle/-/array-shuffle-1.0.1.tgz#7ea4882a356b4bca5f545e0b6e52eaf6d971557a"
+  integrity sha1-fqSIKjVrS8pfVF4LblLq9tlxVXo=
 
 array-union@^1.0.1:
   version "1.0.2"
