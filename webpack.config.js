@@ -60,5 +60,11 @@ module.exports = (env = {}) => ({
         loader: '@ianwalter/prism-loader'
       }
     ]
+  },
+  devServer: {
+    allowedHosts: [
+      '.glitch.me',
+      '.ianwalter.dev'
+    ]
   }
 })
