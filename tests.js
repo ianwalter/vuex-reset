@@ -2,26 +2,32 @@ const { test } = require('@ianwalter/bff')
 const Vue = require('vue')
 const Vuex = require('vuex')
 const clone = require('@ianwalter/clone')
+const merge = require('@ianwalter/merge')
 const VuexReset = require('.')
 
 Vue.use(Vuex)
 
-test('state is reset when trigger mutation executed', ctx => {
-  const state = { message: 'Hello!' }
+test('state is reset when trigger mutation executed', t => {
+  const state = { message: 'Hello!', with: { my: { e: 'yes', open: true } } }
   const store = new Vuex.Store({
     plugins: [VuexReset()],
     state: clone(state),
     mutations: {
       message: (state, message) => (state.message = message),
+      data: (state, data) => merge(state, data),
       reset: () => {}
     }
   })
   store.commit('message', 'Greetings!')
   store.commit('reset')
-  ctx.expect(store.state).toEqual(state)
+  t.expect(store.state).toEqual(state)
   store.commit('message', 'Yo!')
   store.commit('reset')
-  ctx.expect(store.state).toEqual(state)
+  t.expect(store.state).toEqual(state)
+  store.commit('data', { with: { my: { open: false } } })
+  t.expect(store.state.with).toEqual({ my: { e: 'yes', open: false } })
+  store.commit('reset')
+  t.expect(store.state).toEqual(state)
 })
 
 test('only module state is reset when module mutation executed', ctx => {
