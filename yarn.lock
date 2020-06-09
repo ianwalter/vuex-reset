@@ -516,10 +516,10 @@
   resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-6.0.0.tgz#7d7facccc86fb407571c78de00a0bd2adca395cb"
   integrity sha512-Ohskh/vqQFgW2Abaxd3kPYz/uNqoUmCSjU8kB8SoRieQqIOyXit1pFKYW4HmcoRcDFbktpWmS1QpIBoF74DGBg==
 
-"@ianwalter/merge@^9.0.0-2":
-  version "9.0.0-2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-9.0.0-2.tgz#76747d016b106c2a0f35980c7539dff451936127"
-  integrity sha512-QBrCxTOIBKSDKEyN669vPc1OOgqAEhFFTYg54n1FtuN0vhSS94TRJRlpryZ/sqEGI2uaxe0JypZ0TnfxG/kQtA==
+"@ianwalter/merge@^9.0.0-4":
+  version "9.0.0-4"
+  resolved "https://registry.yarnpkg.com/@ianwalter/merge/-/merge-9.0.0-4.tgz#eefb46c1ef866e7daa421237c3222fda5822ba1b"
+  integrity sha512-M0dxT2yn9WLbvDcdCqaeNzWuRgTv6pJmD2xHpxhvMRgA4jeP+/94lECGNTF1Fpchl80goc83qcyeUG5vLARmpw==
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
