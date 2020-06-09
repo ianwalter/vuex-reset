@@ -30,7 +30,7 @@ test('state is reset when trigger mutation executed', t => {
   t.expect(store.state).toEqual(state)
 })
 
-test('only module state is reset when module mutation executed', ctx => {
+test('only module state is reset when module mutation executed', t => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
@@ -59,19 +59,19 @@ test('only module state is reset when module mutation executed', ctx => {
   })
   store.commit('message', rootMessage)
   store.commit('sample/song/name', songName)
-  ctx.expect(store.state['sample/song'].name).toBe(songName)
+  t.expect(store.state['sample/song'].name).toBe(songName)
   store.commit('sample/song/collection', 'Summer')
-  ctx.expect(store.state['sample/song'].collections).toEqual(['Summer'])
-  ctx.expect(store.state['sample/song'].map).toEqual({ Summer: 1 })
+  t.expect(store.state['sample/song'].collections).toEqual(['Summer'])
+  t.expect(store.state['sample/song'].map).toEqual({ Summer: 1 })
   store.commit('sample/song/reset')
-  ctx.expect(store.state.message).toBe(rootMessage)
-  ctx.expect(store.state['sample/song']).toEqual(songState)
+  t.expect(store.state.message).toBe(rootMessage)
+  t.expect(store.state['sample/song']).toEqual(songState)
   store.commit('sample/song/collection', 'Dance')
   store.commit('reset')
-  ctx.expect(store.state['sample/song']).toEqual(songState)
+  t.expect(store.state['sample/song']).toEqual(songState)
 })
 
-test('module state can be reset when registered dynamically', ctx => {
+test('module state can be reset when registered dynamically', t => {
   const rootMessage = 'Yo!'
   const songName = 'One Touch'
   const state = { message: 'Hello!' }
@@ -96,15 +96,15 @@ test('module state can be reset when registered dynamically', ctx => {
   store.registerModuleState('song', song)
   store.commit('message', rootMessage)
   store.commit('song/name', songName)
-  ctx.expect(store.state.song.name).toBe(songName)
+  t.expect(store.state.song.name).toBe(songName)
   store.commit('song/collection', 'Summer')
-  ctx.expect(store.state.song.collections).toEqual(['Summer'])
+  t.expect(store.state.song.collections).toEqual(['Summer'])
   store.commit('song/reset')
-  ctx.expect(store.state.message).toEqual(rootMessage)
-  ctx.expect(store.state.song).toEqual(songState)
+  t.expect(store.state.message).toEqual(rootMessage)
+  t.expect(store.state.song).toEqual(songState)
 })
 
-test('ssr state is used but can reset to initial state', ctx => {
+test('ssr state is used but can reset to initial state', t => {
   const message = 'Yo!'
   const state = { message: 'Hello!', song: 'The Wheel' }
   const store = new Vuex.Store({
@@ -114,12 +114,12 @@ test('ssr state is used but can reset to initial state', ctx => {
       reset: () => true
     }
   })
-  ctx.expect(store.state.message).toBe(message)
+  t.expect(store.state.message).toBe(message)
   store.commit('reset')
-  ctx.expect(store.state).toEqual(state)
+  t.expect(store.state).toEqual(state)
 })
 
-test('current route state is kept if it exists when reset', ctx => {
+test('current route state is kept if it exists when reset', t => {
   const state = { message: 'Hello!' }
   const route = { path: '/' }
   const path = '/welcome'
@@ -143,6 +143,6 @@ test('current route state is kept if it exists when reset', ctx => {
   store.commit('route/path', path)
   store.commit('message', 'Greetings!')
   store.commit('reset')
-  ctx.expect(store.state.message).toBe(state.message)
-  ctx.expect(store.state.route.path).toBe(path)
+  t.expect(store.state.message).toBe(state.message)
+  t.expect(store.state.route.path).toBe(path)
 })
