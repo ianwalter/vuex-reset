@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/vuex-reset",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "A Vuex plugin that makes restoring initial state to the store simple",
   "main": "dist/vuex-reset.js",
   "module": "dist/vuex-reset.browser.js",
