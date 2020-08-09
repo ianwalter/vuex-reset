@@ -623,10 +623,10 @@
     prompts "^2.3.2"
     semver "^7.3.2"
 
-"@ianwalter/renovate-config@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.3.0.tgz#821419333c7673dae837b7bbfb5574a520a4e9db"
-  integrity sha512-J6xH9Lnm9TxqtZIO/cWFT1ziykPN3HlcMeJmUyiOHB0ol4DYJJPM/6/LSbEydU7iUGK5DxobWLAHoKC4j7RcLg==
+"@ianwalter/renovate-config@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/renovate-config/-/renovate-config-1.4.0.tgz#4d8540ea80e58f86376a792f26c96c6058216d86"
+  integrity sha512-zmHUJ06LbexUu1ARDxf9bnZuFCBsHiC+VVOFOy4G2TR9svg8YTP9m4dm+EYr9EXca/eqgwWHpLRxspYkxthfAw==
 
 "@ianwalter/rollup-plugin-hashbang@^1.3.0":
   version "1.3.0"
