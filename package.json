@@ -49,7 +49,7 @@
     "@ianwalter/prism-loader": "^1.2.0",
     "@ianwalter/release": "^5.0.2",
     "@ianwalter/renovate-config": "^1.4.2",
-    "babel-loader": "^8.2.0",
+    "babel-loader": "^8.2.1",
     "bootstrap": "^4.5.3",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
