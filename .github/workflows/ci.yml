@@ -2,10 +2,10 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     container:
       image: node:13.8
