@@ -13,7 +13,7 @@
 ## Installation
 
 ```console
-yarn add @ianwalter/vuex-reset
+pnpm add @ianwalter/vuex-reset
 ```
 
 ## Usage
