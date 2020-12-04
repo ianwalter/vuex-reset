@@ -8156,7 +8156,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@fullhuman/purgecss-loader': ^1.0.0
-  '@ianwalter/bff': ^9.9.1
+  '@ianwalter/bff': ^9.12.3
   '@ianwalter/clone': ^6.0.1
   '@ianwalter/dist': ^6.0.0
   '@ianwalter/dracula': ^2.0.0
