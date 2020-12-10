@@ -15,7 +15,7 @@ devDependencies:
   clean-webpack-plugin: 3.0.0_webpack@5.10.0
   css-loader: 5.0.1_webpack@5.10.0
   html-webpack-plugin: 4.5.0_webpack@5.10.0
-  mini-css-extract-plugin: 1.3.2_webpack@5.10.0
+  mini-css-extract-plugin: 1.3.3_webpack@5.10.0
   optimize-css-assets-webpack-plugin: 5.0.4_webpack@5.10.0
   style-loader: 2.0.0_webpack@5.10.0
   vue: 2.6.12
@@ -4994,7 +4994,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
-  /mini-css-extract-plugin/1.3.2_webpack@5.10.0:
+  /mini-css-extract-plugin/1.3.3_webpack@5.10.0:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 3.0.0
@@ -5006,7 +5006,7 @@ packages:
     peerDependencies:
       webpack: ^4.4.0 || ^5.0.0
     resolution:
-      integrity: sha512-ofYJgCZNm1TToSv02pGANe1lfb31g7ULwNV5Nt31d2dAnVLxFHoguDUAj6U0BLEO7Nrztq4mdtL1yFDaeW7J+A==
+      integrity: sha512-7lvliDSMiuZc81kI+5/qxvn47SCM7BehXex3f2c6l/pR3Goj58IQxZh9nuPQ3AkGQgoETyXuIqLDaO5Oa0TyBw==
   /minimalistic-assert/1.0.1:
     dev: true
     resolution:
@@ -8232,7 +8232,7 @@ specifiers:
   clean-webpack-plugin: ^3.0.0
   css-loader: ^5.0.1
   html-webpack-plugin: ^4.5.0
-  mini-css-extract-plugin: ^1.3.2
+  mini-css-extract-plugin: ^1.3.3
   optimize-css-assets-webpack-plugin: ^5.0.4
   style-loader: ^2.0.0
   vue: ^2.6.12
