@@ -32,6 +32,10 @@
   "bugs": {
     "url": "https://github.com/ianwalter/vuex-reset/issues"
   },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ianwalter"
+  },
   "homepage": "https://github.com/ianwalter/vuex-reset#readme",
   "files": [
     "dist"

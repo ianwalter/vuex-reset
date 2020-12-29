@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: ianwalter/pnpm:v1.4.0
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # This makes Actions fetch all Git history so that Changesets can
+          # generate changelogs with the correct commits.
+          fetch-depth: 0
+      - name: Install
+        run: pnpm i
+      - name: Changesets
+        uses: changesets/action@bfeb9e077e6cf393e4c4ef17e2bbc75b308b4364
+        with:
+          publish: pnpx changeset publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
