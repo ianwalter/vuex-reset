@@ -1,5 +1,5 @@
 import clone from '@ianwalter/clone'
-import merge from '@ianwalter/merge'
+import { merge } from '@generates/merger'
 
 export default function VuexReset (opts = {}) {
   const { ssr, trigger } = merge({ trigger: 'reset' }, opts)
