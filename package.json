@@ -8,6 +8,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint --ext js,vue .",
+    "build": "modulize",
     "pretest": "modulize",
     "test": "bff",
     "build:site": "webpack --env.singleRun"

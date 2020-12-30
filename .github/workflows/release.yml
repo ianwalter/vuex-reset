@@ -18,6 +18,8 @@ jobs:
           fetch-depth: 0
       - name: Install
         run: pnpm i
+      - name: Build
+        run: pnpm run build
       - name: Changesets
         uses: changesets/action@bfeb9e077e6cf393e4c4ef17e2bbc75b308b4364
         with:
