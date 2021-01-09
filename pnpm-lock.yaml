@@ -4,7 +4,7 @@ dependencies:
 devDependencies:
   '@changesets/cli': 2.12.0
   '@fullhuman/purgecss-loader': 1.0.0
-  '@generates/modulizer': 6.0.0
+  '@generates/modulizer': 6.0.1
   '@ianwalter/bff': 9.13.0
   '@ianwalter/dracula': 2.0.0
   '@ianwalter/eslint-config-vue': 2.1.0
@@ -500,6 +500,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-n7BGzlbFFkyb9otDHaXNHUOIb8xBOYa4IDOOXUXP6SyEG+ZD/NnWjaCjm/eag5MJg/jCGtVomBBqXqpndZZCpg==
+  /@generates/cli/0.0.10:
+    dependencies:
+      '@generates/dotter': 2.0.0
+      '@generates/logger': 0.1.0
+      '@generates/merger': 0.1.2
+      camelcase: 6.2.0
+      common-tags: 1.8.0
+      decamelize: 4.0.0
+      getopts: 2.2.5
+      read-pkg-up: 7.0.1
+    dev: true
+    resolution:
+      integrity: sha512-MO0UPi6uMT96VckR5s65cpnvQRGMT/52qOGest4Ot0ry+In2H2+ox2RQRiNWK8lSPHUf5n327qRlLrsbz1GllQ==
   /@generates/cli/0.0.9:
     dependencies:
       '@generates/logger': 0.0.9
@@ -513,6 +526,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-xZdBwf/mD2azGsJfxIRN0Ln3cPx9AzTxgPK40mLhdedeMEduVXR9hvL/fnRCzj+Lk7ZhvB3wETWcoACjvsQugw==
+  /@generates/dotter/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-QI5gmvS1ZOeZ8msYdctT7VARrHWGGG3PuFYGVqhzkeBkalnaqCAtqOxaGFiEab5f7VzEOZt6d41pmM3fbQmaIQ==
   /@generates/logger/0.0.9:
     dependencies:
       '@generates/cli': 0.0.9
@@ -531,6 +548,24 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-SzWqUUO2ugHSVFW0UoH1dovSCIsP8BHNx1iRqQ/ZnsUDh1t0logrVH9nqWFpR10ey629uIDPq0Ut/43G3P8tZQ==
+  /@generates/logger/0.1.0:
+    dependencies:
+      '@generates/cli': 0.0.10
+      '@generates/dotter': 2.0.0
+      '@generates/merger': 0.1.2
+      '@ianwalter/chromafi': 1.0.1
+      '@ianwalter/clone': 6.0.1
+      '@ianwalter/cloneable': 2.0.0
+      chalk: 4.1.0
+      has-ansi: 4.0.0
+      has-emoji: 1.1.0
+      marked: 1.2.7
+      marked-terminal: 4.1.0_marked@1.2.7
+      strip-ansi: 6.0.0
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-ltA/KJgMRt5qf7gBT+Z8V0Dzuc83mdyQJwjhn3eWxeG6SMNF8Fqrx8yzvQ13AmHWy7wF7/m7CLz8oNsND/M8Mw==
   /@generates/merger/0.1.1:
     dev: true
     resolution:
@@ -538,27 +573,27 @@ packages:
   /@generates/merger/0.1.2:
     resolution:
       integrity: sha512-t1Mi5mtIwCbcKxqZ5v+7Ds570gwTfo5vAXr0Q3naaMxfnCc6CychGHh/GyF6nK3qYIxh9BJhThVTiCfN+ukMuQ==
-  /@generates/modulizer/6.0.0:
+  /@generates/modulizer/6.0.1:
     dependencies:
       '@babel/core': 7.12.10
-      '@generates/cli': 0.0.9
-      '@generates/logger': 0.0.9
+      '@generates/cli': 0.0.10
+      '@generates/logger': 0.1.0
       '@ianwalter/npm-short-name': 1.0.0
       '@ianwalter/rollup-plugin-hashbang': 1.3.0
-      '@rollup/plugin-json': 4.1.0_rollup@1.32.1
+      '@rollup/plugin-json': 4.1.0_rollup@2.36.1
       builtin-modules: 3.2.0
-      p-settle: 3.1.0
+      p-settle: 4.1.1
       read-pkg-up: 6.0.0
       require-from-string: 2.0.2
-      rollup: 1.32.1
-      rollup-plugin-babel: 4.4.0_80ce04b0f9f43535a9250c8baadaddab
-      rollup-plugin-commonjs: 10.1.0_rollup@1.32.1
-      rollup-plugin-node-resolve: 5.2.0_rollup@1.32.1
-      rollup-plugin-terser: 5.3.1_rollup@1.32.1
+      rollup: 2.36.1
+      rollup-plugin-babel: 4.4.0_e0cada4da7a71db21bdab1b0cd39501f
+      rollup-plugin-commonjs: 10.1.0_rollup@2.36.1
+      rollup-plugin-node-resolve: 5.2.0_rollup@2.36.1
+      rollup-plugin-terser: 7.0.2_rollup@2.36.1
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-abc7Jtscc69wwJms6klMF3czAS2R8flG2RUEkyfNbNPxa7L62o2OekWtVXlKWqQAtn0Qn7C32YVhmVQyGPC4tw==
+      integrity: sha512-GnccjISmMtP964tUNi1WO00hMfguIF3MA4jqpPwatMCdPC4Rd/TZumZewFXf22imn8Az6BT5N3mC5k2vZCcDyQ==
   /@ianwalter/bff/9.13.0:
     dependencies:
       '@generates/logger': 0.0.9
@@ -833,12 +868,34 @@ packages:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
       integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
+  /@rollup/plugin-json/4.1.0_rollup@2.36.1:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.36.1
+      rollup: 2.36.1
+    dev: true
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    resolution:
+      integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
   /@rollup/pluginutils/3.1.0_rollup@1.32.1:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.2
       rollup: 1.32.1
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@rollup/pluginutils/3.1.0_rollup@2.36.1:
+    dependencies:
+      '@types/estree': 0.0.39
+      estree-walker: 1.0.1
+      picomatch: 2.2.2
+      rollup: 2.36.1
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -3648,6 +3705,16 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==
+  /fsevents/2.1.3:
+    deprecated: '"Please update to latest v2.3 or v2.2"'
+    dev: true
+    engines:
+      node: ^8.16.0 || ^10.6.0 || >=11.0.0
+    optional: true
+    os:
+      - darwin
+    resolution:
+      integrity: sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==
   /fsevents/2.2.1:
     dev: true
     engines:
@@ -5815,6 +5882,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-gkN3UDlyofG81IRhxLnonSIi8BBrwcPlKMJS6tcJRubofyekqQPMdB5LXPrmCkeu/m/YKx5PzkUVQLezda5/JQ==
+  /p-settle/4.1.1:
+    dependencies:
+      p-limit: 2.3.0
+      p-reflect: 2.1.0
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-6THGh13mt3gypcNMm0ADqVNCcYa3BK6DWsuJWFCuEKP1rpY+OKGp7gaZwVmLspmic01+fsg/fN57MfvDzZ/PuQ==
   /p-try/1.0.0:
     dev: true
     engines:
@@ -6922,9 +6998,9 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
-  /rollup-plugin-babel/4.4.0_80ce04b0f9f43535a9250c8baadaddab:
+  /rollup-plugin-babel/4.4.0_@babel+core@7.12.9+rollup@1.32.1:
     dependencies:
-      '@babel/core': 7.12.10
+      '@babel/core': 7.12.9
       '@babel/helper-module-imports': 7.12.5
       rollup: 1.32.1
       rollup-pluginutils: 2.8.2
@@ -6935,11 +7011,11 @@ packages:
       rollup: '>=0.60.0 <3'
     resolution:
       integrity: sha512-Lek/TYp1+7g7I+uMfJnnSJ7YWoD58ajo6Oarhlex7lvUce+RCKRuGRSgztDO3/MF/PuGKmUL5iTHKf208UNszw==
-  /rollup-plugin-babel/4.4.0_@babel+core@7.12.9+rollup@1.32.1:
+  /rollup-plugin-babel/4.4.0_e0cada4da7a71db21bdab1b0cd39501f:
     dependencies:
-      '@babel/core': 7.12.9
+      '@babel/core': 7.12.10
       '@babel/helper-module-imports': 7.12.5
-      rollup: 1.32.1
+      rollup: 2.36.1
       rollup-pluginutils: 2.8.2
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
     dev: true
@@ -6962,6 +7038,20 @@ packages:
       rollup: '>=1.12.0'
     resolution:
       integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==
+  /rollup-plugin-commonjs/10.1.0_rollup@2.36.1:
+    dependencies:
+      estree-walker: 0.6.1
+      is-reference: 1.2.1
+      magic-string: 0.25.7
+      resolve: 1.19.0
+      rollup: 2.36.1
+      rollup-pluginutils: 2.8.2
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
+    dev: true
+    peerDependencies:
+      rollup: '>=1.12.0'
+    resolution:
+      integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==
   /rollup-plugin-node-resolve/5.2.0_rollup@1.32.1:
     dependencies:
       '@types/resolve': 0.0.8
@@ -6969,6 +7059,20 @@ packages:
       is-module: 1.0.0
       resolve: 1.19.0
       rollup: 1.32.1
+      rollup-pluginutils: 2.8.2
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-node-resolve.
+    dev: true
+    peerDependencies:
+      rollup: '>=1.11.0'
+    resolution:
+      integrity: sha512-jUlyaDXts7TW2CqQ4GaO5VJ4PwwaV8VUGA7+km3n6k6xtOEacf61u0VXwN80phY/evMcaS+9eIeJ9MOyDxt5Zw==
+  /rollup-plugin-node-resolve/5.2.0_rollup@2.36.1:
+    dependencies:
+      '@types/resolve': 0.0.8
+      builtin-modules: 3.2.0
+      is-module: 1.0.0
+      resolve: 1.19.0
+      rollup: 2.36.1
       rollup-pluginutils: 2.8.2
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-node-resolve.
     dev: true
@@ -6989,6 +7093,18 @@ packages:
       rollup: '>=0.66.0 <3'
     resolution:
       integrity: sha512-1pkwkervMJQGFYvM9nscrUoncPwiKR/K+bHdjv6PFgRo3cgPHoRT83y2Aa3GvINj4539S15t/tpFPb775TDs6w==
+  /rollup-plugin-terser/7.0.2_rollup@2.36.1:
+    dependencies:
+      '@babel/code-frame': 7.12.11
+      jest-worker: 26.6.2
+      rollup: 2.36.1
+      serialize-javascript: 4.0.0
+      terser: 5.5.1
+    dev: true
+    peerDependencies:
+      rollup: ^2.0.0
+    resolution:
+      integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
   /rollup-pluginutils/2.8.2:
     dependencies:
       estree-walker: 0.6.1
@@ -7004,6 +7120,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
+  /rollup/2.36.1:
+    dev: true
+    engines:
+      node: '>=10.0.0'
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.1.3
+    resolution:
+      integrity: sha512-eAfqho8dyzuVvrGqpR0ITgEdq0zG2QJeWYh+HeuTbpcaXk8vNFc48B7bJa1xYosTCKx0CuW+447oQOW8HgBIZQ==
   /rsvp/4.8.5:
     dev: true
     engines:
@@ -8601,7 +8726,7 @@ specifiers:
   '@changesets/cli': ^2.12.0
   '@fullhuman/purgecss-loader': ^1.0.0
   '@generates/merger': ^0.1.2
-  '@generates/modulizer': ^6.0.0
+  '@generates/modulizer': ^6.0.1
   '@ianwalter/bff': ^9.13.0
   '@ianwalter/clone': ^6.0.1
   '@ianwalter/dracula': ^2.0.0
