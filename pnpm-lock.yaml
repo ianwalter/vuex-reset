@@ -23,8 +23,8 @@ devDependencies:
   vue-template-compiler: 2.6.12
   vuex: 3.6.0_vue@2.6.12
   webpack: 5.13.0_webpack-cli@4.3.1
-  webpack-cli: 4.3.1_1f74458cb80aaf10297602d41910e853
-  webpack-dev-server: 3.11.1_webpack-cli@4.3.1+webpack@5.13.0
+  webpack-cli: 4.3.1_3388d4d72c89efcec3128a3bb0897f99
+  webpack-dev-server: 3.11.2_webpack-cli@4.3.1+webpack@5.13.0
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -972,7 +972,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.14.10
+      '@types/node': 14.14.16
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1227,16 +1227,16 @@ packages:
   /@webpack-cli/info/1.2.1_webpack-cli@4.3.1:
     dependencies:
       envinfo: 7.7.3
-      webpack-cli: 4.3.1_1f74458cb80aaf10297602d41910e853
+      webpack-cli: 4.3.1_3388d4d72c89efcec3128a3bb0897f99
     dev: true
     peerDependencies:
       webpack-cli: 4.x.x
     resolution:
       integrity: sha512-fLnDML5HZ5AEKzHul8xLAksoKN2cibu6MgonkUj8R9V7bbeVRkd1XbGEGWrAUNYHbX1jcqCsDEpBviE5StPMzQ==
-  /@webpack-cli/serve/1.2.1_43bdb84c3e57303dcde254a2a9b44037:
+  /@webpack-cli/serve/1.2.1_08c5c03ab3da7efca6dad651691d116e:
     dependencies:
-      webpack-cli: 4.3.1_1f74458cb80aaf10297602d41910e853
-      webpack-dev-server: 3.11.1_webpack-cli@4.3.1+webpack@5.13.0
+      webpack-cli: 4.3.1_3388d4d72c89efcec3128a3bb0897f99
+      webpack-dev-server: 3.11.2_webpack-cli@4.3.1+webpack@5.13.0
     dev: true
     peerDependencies:
       webpack-cli: 4.x.x
@@ -8314,11 +8314,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
-  /webpack-cli/4.3.1_1f74458cb80aaf10297602d41910e853:
+  /webpack-cli/4.3.1_3388d4d72c89efcec3128a3bb0897f99:
     dependencies:
       '@discoveryjs/json-ext': 0.5.1
       '@webpack-cli/info': 1.2.1_webpack-cli@4.3.1
-      '@webpack-cli/serve': 1.2.1_43bdb84c3e57303dcde254a2a9b44037
+      '@webpack-cli/serve': 1.2.1_08c5c03ab3da7efca6dad651691d116e
       colorette: 1.2.1
       commander: 6.2.0
       enquirer: 2.3.6
@@ -8329,7 +8329,7 @@ packages:
       rechoir: 0.7.0
       v8-compile-cache: 2.2.0
       webpack: 5.13.0_webpack-cli@4.3.1
-      webpack-dev-server: 3.11.1_webpack-cli@4.3.1+webpack@5.13.0
+      webpack-dev-server: 3.11.2_webpack-cli@4.3.1+webpack@5.13.0
       webpack-merge: 4.2.2
     dev: true
     engines:
@@ -8370,7 +8370,7 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-1xC42LxbYoqLNAhV6YzTYacicgMZQTqRd27Sim9wn5hJrX3I5nxYy1SxSd4+gjUFsz1dQFj+yEe6zEVmSkeJjw==
-  /webpack-dev-server/3.11.1_webpack-cli@4.3.1+webpack@5.13.0:
+  /webpack-dev-server/3.11.2_webpack-cli@4.3.1+webpack@5.13.0:
     dependencies:
       ansi-html: 0.0.7
       bonjour: 3.5.0
@@ -8402,7 +8402,7 @@ packages:
       supports-color: 6.1.0
       url: 0.11.0
       webpack: 5.13.0_webpack-cli@4.3.1
-      webpack-cli: 4.3.1_1f74458cb80aaf10297602d41910e853
+      webpack-cli: 4.3.1_3388d4d72c89efcec3128a3bb0897f99
       webpack-dev-middleware: 3.7.2_webpack@5.13.0
       webpack-log: 2.0.0
       ws: 6.2.1
@@ -8418,7 +8418,7 @@ packages:
       webpack-cli:
         optional: true
     resolution:
-      integrity: sha512-u4R3mRzZkbxQVa+MBWi2uVpB5W59H3ekZAJsQlKUTdl7Elcah2EhygTPLmeFXybQkf9i2+L0kn7ik9SnXa6ihQ==
+      integrity: sha512-A80BkuHRQfCiNtGBS1EMf2ChTUs0x+B3wGDFmOeT4rmJOHhHTCH2naNxIHhmkr0/UillP4U3yeIyv1pNp+QDLQ==
   /webpack-log/2.0.0:
     dependencies:
       ansi-colors: 3.2.4
@@ -8474,7 +8474,7 @@ packages:
       tapable: 2.2.0
       terser-webpack-plugin: 5.1.1_webpack@5.13.0
       watchpack: 2.0.1
-      webpack-cli: 4.3.1_1f74458cb80aaf10297602d41910e853
+      webpack-cli: 4.3.1_3388d4d72c89efcec3128a3bb0897f99
       webpack-sources: 2.2.0
     dev: true
     engines:
@@ -8725,4 +8725,4 @@ specifiers:
   vuex: ^3.6.0
   webpack: ^5.13.0
   webpack-cli: ^4.3.1
-  webpack-dev-server: ^3.11.1
+  webpack-dev-server: ^3.11.2
