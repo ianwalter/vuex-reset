@@ -2,7 +2,7 @@ dependencies:
   '@generates/merger': 0.1.2
   '@ianwalter/clone': 6.0.1
 devDependencies:
-  '@changesets/cli': 2.12.0
+  '@changesets/cli': 2.13.0
   '@fullhuman/purgecss-loader': 1.0.0
   '@generates/modulizer': 6.0.1
   '@ianwalter/bff': 9.13.0
@@ -295,7 +295,7 @@ packages:
       '@babel/runtime': 7.12.5
       '@changesets/config': 1.4.0
       '@changesets/get-version-range-type': 0.3.2
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/types': 3.2.0
       '@manypkg/get-packages': 1.1.1
       detect-indent: 6.0.0
@@ -319,7 +319,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1UqJpX5Tj2kGtcI3anG3vsLFfX6na5fLsPaxwgS7T/zt1jJ1hv0cMC+iP6fd9BuCHvcFn22GT74bcRaVnAvm3Q==
-  /@changesets/cli/2.12.0:
+  /@changesets/cli/2.13.0:
     dependencies:
       '@babel/runtime': 7.12.5
       '@changesets/apply-release-plan': 4.1.0
@@ -328,7 +328,7 @@ packages:
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.1.3
       '@changesets/get-release-plan': 2.0.1
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/logger': 0.0.5
       '@changesets/pre': 1.0.5
       '@changesets/read': 0.4.6
@@ -354,7 +354,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-dGdFkg75zsaEObsG8gwMLglS6sJVjXWwgVTAzEIjqIoWVnKwqZqccTb4gn0noq47uCwy7SqxiAJqGibIy9UOKw==
+      integrity: sha512-z5b2CkubunWkT5jtGLIioz6swhsSd9ks7cxQNrf721JE3cr2si+Qy/3Zrw9jfbQTHheionD3LAEsc6wauZg3WQ==
   /@changesets/config/1.4.0:
     dependencies:
       '@changesets/errors': 0.1.4
@@ -399,7 +399,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-SVqwYs5pULYjYT4op21F2pVbcrca4qA/bAA3FmFXKMN7Y+HcO8sbZUTx3TAy2VXulP2FACd1aC7f2nTuqSPbqg==
-  /@changesets/git/1.0.6:
+  /@changesets/git/1.1.0:
     dependencies:
       '@babel/runtime': 7.12.5
       '@changesets/errors': 0.1.4
@@ -409,7 +409,7 @@ packages:
       spawndamnit: 2.0.0
     dev: true
     resolution:
-      integrity: sha512-e0M06XuME3W5lGhz+CO0vLc60u+hLk/pYjOx/6GXEWuQrwtGgeycFIfRgRt8qTs664o1oKtVHBbd7ItpoWgFfA==
+      integrity: sha512-f/2rQynT+JiAL/V0V/GQdXhLkcb86ELg3UwH3fQO4wVdfUbE9NHIHq9ohJdH1Ymh0Lv48F/b38aWZ5v2sKiF3w==
   /@changesets/logger/0.0.5:
     dependencies:
       chalk: 2.4.2
@@ -436,7 +436,7 @@ packages:
   /@changesets/read/0.4.6:
     dependencies:
       '@babel/runtime': 7.12.5
-      '@changesets/git': 1.0.6
+      '@changesets/git': 1.1.0
       '@changesets/logger': 0.0.5
       '@changesets/parse': 0.3.7
       '@changesets/types': 3.2.0
@@ -8706,7 +8706,7 @@ packages:
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
-  '@changesets/cli': ^2.12.0
+  '@changesets/cli': ^2.13.0
   '@fullhuman/purgecss-loader': ^1.0.0
   '@generates/merger': ^0.1.2
   '@generates/modulizer': ^6.0.1
