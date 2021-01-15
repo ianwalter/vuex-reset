@@ -9,7 +9,7 @@ devDependencies:
   '@ianwalter/dracula': 2.0.0
   '@ianwalter/eslint-config-vue': 2.1.0
   '@ianwalter/prism-loader': 1.2.0
-  '@ianwalter/renovate-config': 1.4.2
+  '@ianwalter/renovate-config': 1.4.3
   babel-loader: 8.2.2_webpack@5.15.0
   bootstrap: 4.5.3
   clean-webpack-plugin: 3.0.0_webpack@5.15.0
@@ -773,10 +773,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KQy44LC1XWyRVPfiajOvxmN4d6DzJd8DUJH781A/8of1e88NTQpU8BD73dNR8Mfk5AItRbUiBQn9r7/mv+38HQ==
-  /@ianwalter/renovate-config/1.4.2:
+  /@ianwalter/renovate-config/1.4.3:
     dev: true
     resolution:
-      integrity: sha512-zsqqCE28FwCvBbXmDQgCwnGa5R1HEiNaMZD4QUwdVuycMT1xtv1TDAj4YiP878M4jgiU83iY1BdUXtjkpxu/Tw==
+      integrity: sha512-61InLaz89GLb3iTcRSL2Z+WtYnEIfzWJ7gy+R8ascdsRpARU8qwkBqmq6euw8OPxfHNbqtqEAiG1ljckFjVwsQ==
   /@ianwalter/rollup-plugin-hashbang/1.3.0:
     dependencies:
       magic-string: 0.25.7
@@ -8715,7 +8715,7 @@ specifiers:
   '@ianwalter/dracula': ^2.0.0
   '@ianwalter/eslint-config-vue': ^2.1.0
   '@ianwalter/prism-loader': ^1.2.0
-  '@ianwalter/renovate-config': ^1.4.2
+  '@ianwalter/renovate-config': ^1.4.3
   babel-loader: ^8.2.2
   bootstrap: ^4.5.3
   clean-webpack-plugin: ^3.0.0
