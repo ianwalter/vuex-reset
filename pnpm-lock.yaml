@@ -11,7 +11,7 @@ devDependencies:
   '@ianwalter/prism-loader': 1.2.0
   '@ianwalter/renovate-config': 1.4.3
   babel-loader: 8.2.2_webpack@5.15.0
-  bootstrap: 4.5.3
+  bootstrap: 4.6.0
   clean-webpack-plugin: 3.0.0_webpack@5.15.0
   css-loader: 5.0.1_webpack@5.15.0
   html-webpack-plugin: 4.5.1_webpack@5.15.0
@@ -1674,13 +1674,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap/4.5.3:
+  /bootstrap/4.6.0:
     dev: true
     peerDependencies:
       jquery: 1.9.1 - 3
       popper.js: ^1.16.1
     resolution:
-      integrity: sha512-o9ppKQioXGqhw8Z7mah6KdTYpNQY//tipnkxppWhPbiSWdD+1raYsnhwEZjkTHYbGee4cVQ0Rx65EhOY/HNLcQ==
+      integrity: sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
   /boxen/1.3.0:
     dependencies:
       ansi-align: 2.0.0
@@ -8753,7 +8753,7 @@ specifiers:
   '@ianwalter/prism-loader': ^1.2.0
   '@ianwalter/renovate-config': ^1.4.3
   babel-loader: ^8.2.2
-  bootstrap: ^4.5.3
+  bootstrap: ^4.6.0
   clean-webpack-plugin: ^3.0.0
   css-loader: ^5.0.1
   html-webpack-plugin: ^4.5.1
