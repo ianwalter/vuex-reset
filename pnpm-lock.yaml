@@ -21,7 +21,7 @@ devDependencies:
   vue: 2.6.12
   vue-loader: 16.1.2
   vue-template-compiler: 2.6.12
-  vuex: 3.6.1_vue@2.6.12
+  vuex: 3.6.2_vue@2.6.12
   webpack: 5.17.0_webpack-cli@4.4.0
   webpack-cli: 4.4.0_dc825068fadcc46eb552c456deeae18a
   webpack-dev-server: 3.11.2_webpack-cli@4.4.0+webpack@5.17.0
@@ -8311,14 +8311,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
-  /vuex/3.6.1_vue@2.6.12:
+  /vuex/3.6.2_vue@2.6.12:
     dependencies:
       vue: 2.6.12
     dev: true
     peerDependencies:
       vue: ^2.0.0
     resolution:
-      integrity: sha512-fsVwP9akzE2TYxZcFm3SHQgbyOI5c13IZJ9GH1ivrCeTaXk8JiEm9szJvIxO5+evu2+REk2E9smjce+9vgVGLg==
+      integrity: sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw==
   /walker/1.0.7:
     dependencies:
       makeerror: 1.0.11
@@ -8767,7 +8767,7 @@ specifiers:
   vue: ^2.6.12
   vue-loader: ^16.1.2
   vue-template-compiler: ^2.6.12
-  vuex: ^3.6.1
+  vuex: ^3.6.2
   webpack: ^5.17.0
   webpack-cli: ^4.4.0
   webpack-dev-server: ^3.11.2
