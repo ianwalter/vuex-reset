@@ -2,7 +2,7 @@ dependencies:
   '@generates/merger': 0.1.2
   '@ianwalter/clone': 6.0.1
 devDependencies:
-  '@changesets/cli': 2.14.0
+  '@changesets/cli': 2.14.1
   '@fullhuman/purgecss-loader': 1.0.0
   '@generates/modulizer': 6.0.1
   '@ianwalter/bff': 9.13.0
@@ -319,7 +319,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-dMqe2L5Pn4UGTW89kOuuCuZD3pQFZj1Sxv92ZW4S98sXGsxcb2PdW+PeHbQ7tawkCYCOvzhXxAlN4OdF2DlDKQ==
-  /@changesets/cli/2.14.0:
+  /@changesets/cli/2.14.1:
     dependencies:
       '@babel/runtime': 7.12.5
       '@changesets/apply-release-plan': 4.2.0
@@ -354,7 +354,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-rbQMRDXl1cXOglnjUvYyrFLlYBbS0YZdfxZfW3ZbGLzLoS4n50+B9fLSE9oW20hQuL3zAnyLyacb9cwNhF2lig==
+      integrity: sha512-ydU2ZUP/s7nHQmz8TrliT+kE2dJUpZYKh8MBHrkV6suchCBhT4DmoP4VDF9M4215r18iPbMpE1TjskzXGXB8eQ==
   /@changesets/config/1.5.0:
     dependencies:
       '@changesets/errors': 0.1.4
@@ -8721,7 +8721,7 @@ packages:
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
-  '@changesets/cli': ^2.14.0
+  '@changesets/cli': ^2.14.1
   '@fullhuman/purgecss-loader': ^1.0.0
   '@generates/merger': ^0.1.2
   '@generates/modulizer': ^6.0.1
