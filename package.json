@@ -42,7 +42,7 @@
     "dist"
   ],
   "dependencies": {
-    "@generates/merger": "^0.1.2",
+    "@generates/merger": "^0.1.3",
     "@ianwalter/clone": "^6.0.1"
   },
   "devDependencies": {
