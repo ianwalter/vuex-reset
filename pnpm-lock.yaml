@@ -14,7 +14,7 @@ devDependencies:
   bootstrap: 4.6.0
   clean-webpack-plugin: 3.0.0_webpack@5.21.2
   css-loader: 5.0.2_webpack@5.21.2
-  html-webpack-plugin: 5.0.0_webpack@5.21.2
+  html-webpack-plugin: 5.3.1_webpack@5.21.2
   mini-css-extract-plugin: 1.3.6_webpack@5.21.2
   optimize-css-assets-webpack-plugin: 5.0.4_webpack@5.21.2
   style-loader: 2.0.0_webpack@5.21.2
@@ -4104,11 +4104,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-uE/TxKuyNIcx44cIWnjr/rfIATDH7ZaOMmstu0CwhFG1Dunhlp4OC6/NMbhiwoq5BpW0ubi303qnEk/PZj614w==
-  /html-webpack-plugin/5.0.0_webpack@5.21.2:
+  /html-webpack-plugin/5.3.1_webpack@5.21.2:
     dependencies:
       '@types/html-minifier-terser': 5.1.1
       html-minifier-terser: 5.1.1
-      loader-utils: 2.0.0
       lodash: 4.17.20
       pretty-error: 2.1.2
       tapable: 2.2.0
@@ -4119,7 +4118,7 @@ packages:
     peerDependencies:
       webpack: ^5.20.0
     resolution:
-      integrity: sha512-kxTyb8cyZwEyUqXTgdHRUOF4C7uCrquzw2T+YTudehm/yspodgCkREjdmc4dXI8k2P4NEjqOVbnOOlPZg4TKJA==
+      integrity: sha512-rZsVvPXUYFyME0cuGkyOHfx9hmkFa4pWfxY/mdY38PsBEaVNsRoA+Id+8z6DBDgyv3zaw6XQszdF8HLwfQvcdQ==
   /htmlparser2/3.10.1:
     dependencies:
       domelementtype: 1.3.1
@@ -8735,7 +8734,7 @@ specifiers:
   bootstrap: ^4.6.0
   clean-webpack-plugin: ^3.0.0
   css-loader: ^5.0.2
-  html-webpack-plugin: ^5.0.0
+  html-webpack-plugin: ^5.3.1
   mini-css-extract-plugin: ^1.3.6
   optimize-css-assets-webpack-plugin: ^5.0.4
   style-loader: ^2.0.0
