@@ -19,7 +19,7 @@ devDependencies:
   optimize-css-assets-webpack-plugin: 5.0.4_webpack@5.21.2
   style-loader: 2.0.0_webpack@5.21.2
   vue: 2.6.12
-  vue-loader: 16.1.2
+  vue-loader: 16.2.0
   vue-template-compiler: 2.6.12
   vuex: 3.6.2_vue@2.6.12
   webpack: 5.21.2_webpack-cli@4.5.0
@@ -8268,14 +8268,14 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-uVcQqe8sUNzdHGcRHMd2Z/hl6qEaWrAmglTKP92Fnq9TYU9un8xsyFgEdFJaXh/1rd7h8Aic1GaiQow5nVneow==
-  /vue-loader/16.1.2:
+  /vue-loader/16.2.0:
     dependencies:
       chalk: 4.1.0
       hash-sum: 2.0.0
       loader-utils: 2.0.0
     dev: true
     resolution:
-      integrity: sha512-8QTxh+Fd+HB6fiL52iEVLKqE9N1JSlMXLR92Ijm6g8PZrwIxckgpqjPDWRP5TWxdiPaHR+alUWsnu1ShQOwt+Q==
+      integrity: sha512-TitGhqSQ61RJljMmhIGvfWzJ2zk9m1Qug049Ugml6QP3t0e95o0XJjk29roNEiPKJQBEi8Ord5hFuSuELzSp8Q==
   /vue-template-compiler/2.6.12:
     dependencies:
       de-indent: 1.0.2
@@ -8740,7 +8740,7 @@ specifiers:
   optimize-css-assets-webpack-plugin: ^5.0.4
   style-loader: ^2.0.0
   vue: ^2.6.12
-  vue-loader: ^16.1.2
+  vue-loader: ^16.2.0
   vue-template-compiler: ^2.6.12
   vuex: ^3.6.2
   webpack: ^5.21.2
