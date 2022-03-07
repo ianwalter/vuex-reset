@@ -49,7 +49,7 @@
     "@changesets/cli": "^2.14.1",
     "@fullhuman/purgecss-loader": "^1.0.0",
     "@generates/modulizer": "^6.0.1",
-    "@ianwalter/bff": "^9.13.0",
+    "@ianwalter/bff": "^11.2.2",
     "@ianwalter/dracula": "^2.0.0",
     "@ianwalter/eslint-config-vue": "^2.1.0",
     "@ianwalter/prism-loader": "^1.2.0",
