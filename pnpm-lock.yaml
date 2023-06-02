@@ -19,7 +19,7 @@ devDependencies:
   optimize-css-assets-webpack-plugin: 5.0.4_webpack@5.21.2
   style-loader: 2.0.0_webpack@5.21.2
   vue: 2.6.12
-  vue-loader: 16.1.2
+  vue-loader: 17.2.2_vue@2.6.12+webpack@5.21.2
   vue-template-compiler: 2.6.12
   vuex: 3.6.2_vue@2.6.12
   webpack: 5.21.2_webpack-cli@4.5.0
@@ -8268,14 +8268,25 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-uVcQqe8sUNzdHGcRHMd2Z/hl6qEaWrAmglTKP92Fnq9TYU9un8xsyFgEdFJaXh/1rd7h8Aic1GaiQow5nVneow==
-  /vue-loader/16.1.2:
+  /vue-loader/17.2.2_vue@2.6.12+webpack@5.21.2:
     dependencies:
       chalk: 4.1.0
       hash-sum: 2.0.0
-      loader-utils: 2.0.0
+      vue: 2.6.12
+      watchpack: 2.4.0
+      webpack: 5.21.2_webpack-cli@4.5.0
     dev: true
+    peerDependencies:
+      '@vue/compiler-sfc': '*'
+      vue: '*'
+      webpack: ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+      vue:
+        optional: true
     resolution:
-      integrity: sha512-8QTxh+Fd+HB6fiL52iEVLKqE9N1JSlMXLR92Ijm6g8PZrwIxckgpqjPDWRP5TWxdiPaHR+alUWsnu1ShQOwt+Q==
+      integrity: sha512-aqNvKJvnz2A/6VWeJZodAo8XLoAlVwBv+2Z6dama+LHsAF+P/xijQ+OfWrxIs0wcGSJduvdzvTuATzXbNKkpiw==
   /vue-template-compiler/2.6.12:
     dependencies:
       de-indent: 1.0.2
@@ -8310,6 +8321,15 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-vO8AKGX22ZRo6PiOFM9dC0re8IcKh8Kd/aH2zeqUc6w4/jBGlTy2P7fTC6ekT0NjVeGjgU2dGC5rNstKkeLEQg==
+  /watchpack/2.4.0:
+    dependencies:
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.4
+    dev: true
+    engines:
+      node: '>=10.13.0'
+    resolution:
+      integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==
   /wbuf/1.7.3:
     dependencies:
       minimalistic-assert: 1.0.1
@@ -8740,7 +8760,7 @@ specifiers:
   optimize-css-assets-webpack-plugin: ^5.0.4
   style-loader: ^2.0.0
   vue: ^2.6.12
-  vue-loader: ^16.1.2
+  vue-loader: ^17.2.2
   vue-template-compiler: ^2.6.12
   vuex: ^3.6.2
   webpack: ^5.21.2
